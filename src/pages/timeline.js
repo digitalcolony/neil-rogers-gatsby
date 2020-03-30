@@ -133,11 +133,13 @@ export default () => {
       </p>
       <p>TODO: add photos</p>
       <h2>Zeta 4 (1987)</h2>
-      <p>On October 12, 1987, Neil moves to FM Radio when he debuts mornings on Zeta 4.</p>
+      <p>
+        On October 12, 1987, Neil moves to FM Radio when he debuts mornings on
+        Zeta 4.
+      </p>
       <p>TODO Zeta image</p>
-      <p>On October 12, 1987, Neil moves to FM Radio when he debuts mornings on Zeta 4.</p>
+      <p>On November 1, 1988, Neil did his last show on Zeta 4.</p>
       <h2>WIOD (1988 - 1997)</h2>
-      
     </PrimaryLayout>
   )
 }
