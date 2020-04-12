@@ -17,9 +17,7 @@ export default () => {
   return (
     <PrimaryLayout column="col-m-6" className="w-25">
       <h1>{data.markdownRemark.frontmatter.title}</h1>
-      <div dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }}>
-
-      </div>
+      <div dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }}></div>
     </PrimaryLayout>
   )
 }
