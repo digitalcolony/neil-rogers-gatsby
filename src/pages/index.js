@@ -12,30 +12,48 @@ export default () => {
         preserving the memory of radio’s Neil Rogers. Our primary goal is
         locating and sharing audio files. In addition to Neil Rogers, the
         archive includes audio from other Florida radio icons such as Bob
-        Lassiter, Stan Major, Rick & Suds, Ron Bennington, Bill Calder, Mike
-        Spindell, Glen Hill and others.
+        Lassiter, Stan Major, Rick {"&"} Suds, Ron Bennington, Bill Calder, Mike
+        Spindell, Glen Hill, and others.
       </p>
 
       <p>
         If you have audio from Neil Rogers you would like to share, we would
         love to add it to our archives. In addition to Neil, we also are
-        archiving other Florida talk shows. Our email is audio@neilrogers.org.
+        archiving other Florida talk shows. Our email is <b>audio@neilrogers.org</b>.
         Thank you.
       </p>
-      <img src={neil_image} alt="Neil Rogers Mask" />
-      <p>
-        To learn more about radio legend Neil Rogers see his page on <a href="https://en.wikipedia.org/wiki/Neil_Rogers">Wikipedia</a>
-        or read our <Link to="/timeline">Timeline</Link>.
-      </p>
-      <h2>Connect and Share</h2>
-      <ul>
-        <li>Podcast RSS</li>
-        <li>YouTube</li>
-        <li>Twitter</li>
-        <li>Flickr</li>
-      </ul>
 
-      <p>Subscribe to Neil Rogers by Email</p>
+      <p>
+        <img src={neil_image} alt="Neil Rogers Mask" />
+      </p>
+
+      <p>
+        To learn more about radio legend Neil Rogers see his page on{" "}
+        <a href="https://en.wikipedia.org/wiki/Neil_Rogers">Wikipedia</a> or
+        read our <Link to="/timeline/">Timeline</Link>.
+      </p>
+
+      <h2>Connect and Share</h2>
+
+      <ul>
+        <li>
+          <a href="http://feeds.feedburner.com/NeilRogersShow">Podcast RSS</a>
+        </li>
+        <li>
+          <a href="https://itunes.apple.com/us/podcast/neil-rogers-show/id1231601174">
+            iTunes
+          </a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/c/NeilRogersRadio">YouTube</a>
+        </li>
+        <li>
+          <a href="https://twitter.com/NeilRogersRadio">Twitter</a>
+        </li>
+        <li>
+          <a href="https://www.flickr.com/photos/neilrogersradio">Flickr</a>
+        </li>
+      </ul>
 
       <h2>The Neil Rogers Show Podcast</h2>
 
@@ -50,18 +68,39 @@ export default () => {
         <li>SUNDAY: 2008-2009</li>
       </ul>
 
-      <p>Check it out on iTune or directly from the podcast RSS. </p>
+      <p>
+        Check it out on{" "}
+        <a href="https://itunes.apple.com/us/podcast/neil-rogers-show/id1231601174">
+          iTunes
+        </a>{" "}
+        or directly from the{" "}
+        <a href="http://feeds.feedburner.com/NeilRogersShow">Podcast RSS</a>.{" "}
+      </p>
 
       <h2>Friends of Neil</h2>
 
       <ul>
-        <li>Jorge Rodriguez</li>
-        <li>Norm Kent</li>
-        <li>Brit Somers</li>
-        <li>Stan Major (RIP)</li>
+        <li>
+          <a href="https://sites.google.com/site/donbrowne/wiod">
+            The Rick {"&"} Suds Show
+          </a>
+        </li>
+        <li>
+          <a href="https://sofloradio.com/the-jorge-rodriguez-show/">
+            Jorge Rodriguez
+          </a>
+        </li>
+        <li>
+          <a href="https://www.normkentshow.com/">Norm Kent</a>
+        </li>
+        <li>
+          <a href="http://www.thebritsomersshow.com/">Brit Somers</a>
+        </li>
+        <li>
+          <a href="https://stanmajor.blogspot.com/">Stan Major (RIP)</a>
+        </li>
       </ul>
 
-      <h2>Disclaimer</h2>
       <h3>Copyright Disclaimer Under Section 107 of the Copyright Act 1976</h3>
       <p>
         This site does not claim to hold copyrights for the audio being shared.
