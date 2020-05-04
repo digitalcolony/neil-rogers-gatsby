@@ -3,8 +3,7 @@ import PrimaryLayout from "../layouts/PrimaryLayout"
 
 export default () => {
   return (
-    <PrimaryLayout soundboard="true" column="col-m-6" className="w-25">
-      <h1>Support</h1>
+    <PrimaryLayout title="Support">
       <p>
         There are several ways you can support the Neil Rogers Audio Restoration
         Project.

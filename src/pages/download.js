@@ -4,8 +4,7 @@ import neil_pope from "../images/pope.jpg"
 
 export default () => {
   return (
-    <PrimaryLayout column="col-m-6" className="w-25">
-      <h1>Download, Stream or Torrent Audio</h1>
+    <PrimaryLayout title="Download, Stream or Torrent Audio">
       <p>
         The Neil Rogers Audio Restoration Project has recovered almost 5,000
         hours of commercial-free radio. In addition to Neil Rogers, we also have

@@ -16,8 +16,7 @@ import zeta from "../images/zeta-94-9.jpg"
 
 export default () => {
   return (
-    <PrimaryLayout column="col-m-6" className="w-25">
-      <h1>Neil Rogers Timeline</h1>
+    <PrimaryLayout title="Neil Rogers Timeline">
       <p>This is a brief history of radio legend Neil Rogers.</p>
       <h3>Childhood</h3>
       <p>

@@ -5,8 +5,7 @@ import neil_image from "../images/neil-mask-radio.jpg"
 
 export default () => {
   return (
-    <PrimaryLayout column="col-m-6" className="w-25">
-      <h1>The Neil Rogers Show</h1>
+    <PrimaryLayout title="The Neil Rogers Show">
       <p>
         NeilRogers.org is the work of a collection of fans dedicated to
         preserving the memory of radio’s Neil Rogers. Our primary goal is
@@ -17,10 +16,10 @@ export default () => {
       </p>
 
       <p>
-        If you have audio from Neil Rogers you would like to share, we would
+        If you have audio from Neil Rogers that you would like to share, we would
         love to add it to our archives. In addition to Neil, we also are
-        archiving other Florida talk shows. Our email is <b>audio@neilrogers.org</b>.
-        Thank you.
+        archiving other Florida talk shows. Our email is{" "}
+        <b>audio@neilrogers.org</b>. Thank you.
       </p>
 
       <p>

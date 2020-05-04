@@ -4,8 +4,7 @@ import miami_herald from "../images/miami-herald-neil.jpg"
 
 export default () => {
   return (
-    <PrimaryLayout column="col-m-6" className="w-25">
-      <h1>Blog</h1>
+    <PrimaryLayout title="Blog">
       <p>
         Below is a collection of articles related to the audio recovery project.
       </p>
@@ -38,12 +37,10 @@ export default () => {
           Interview with Radio Ink (January 2014)
         </a>
       </p>
-
       <p>
         <img
           src={miami_herald}
           alt="Miami Herald article on Neil Rogers Archives"
-          width="500"
         />
       </p>
     </PrimaryLayout>
