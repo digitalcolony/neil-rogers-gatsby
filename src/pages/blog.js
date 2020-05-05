@@ -1,6 +1,7 @@
 import React from "react"
+//import Img from "gatsby-image"
 import PrimaryLayout from "../layouts/PrimaryLayout"
-import miami_herald from "../images/miami-herald-neil.jpg"
+import img_miami_herald from "../images/miami_herald_neil.jpg"
 
 export default () => {
   return (
@@ -37,12 +38,19 @@ export default () => {
           Interview with Radio Ink (January 2014)
         </a>
       </p>
-      <p>
-        <img
-          src={miami_herald}
-          alt="Miami Herald article on Neil Rogers Archives"
-        />
-      </p>
+      <hr />
+      <section>
+        <figure>
+          <img
+            className="responsive"
+            src={img_miami_herald}
+            alt="Miami Herald article on Neil Rogers Archives"
+          />
+          <figcaption>
+            <i>Miami Herald article on the Neil Rogers Archives</i>
+          </figcaption>
+        </figure>
+      </section>
     </PrimaryLayout>
   )
 }

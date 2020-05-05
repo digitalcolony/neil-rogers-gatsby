@@ -12,12 +12,16 @@ export default () => {
         links below to download everything for free. No account is required.
       </p>
       <p>
-        You can view our{" "}
-        <a href="https://docs.google.com/spreadsheets/d/1czK9DiOqCK_P8lYS5Im8a_u9IZnKW39lBAuq3FXdmRM/edit?usp=sharing">
-          Google Drive Spreadsheet
-        </a>{" "}
-        for a list of recovered audio.
+        You can view our Google Drive Spreadsheet for a list of recovered audio.
       </p>
+
+      <a
+        href="https://docs.google.com/spreadsheets/d/1czK9DiOqCK_P8lYS5Im8a_u9IZnKW39lBAuq3FXdmRM/edit?usp=sharing"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <b>Google Drive Spreadsheet &#x2197;</b>
+      </a>
 
       <h3>YouTube</h3>
 
@@ -27,8 +31,12 @@ export default () => {
         NEIL played during a broadcast.{" "}
       </p>
       <p>
-        <a href="https://www.youtube.com/c/NeilRogersRadio">
-          youtube.com/c/NeilRogersRadio
+        <a
+          href="https://www.youtube.com/c/NeilRogersRadio"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i>youtube.com/c/NeilRogersRadio &#x2197;</i>
         </a>
       </p>
 
@@ -40,13 +48,26 @@ export default () => {
       </p>
       <p>
         <a href="https://archive.org/details/@neil_rogers_radio">
-          archive.org/details/@neil_rogers_radio
+          <i>archive.org/details/@neil_rogers_radio &#x2197;</i>
         </a>
       </p>
       <p>
         There is also a folder of recovered audio for the{" "}
-        <a href="https://archive.org/details/RickSudsShow">Rick Suds Show</a>{" "}
-        and <a href="https://archive.org/details/stan-major-show">Stan Major</a>
+        <a
+          href="https://archive.org/details/RickSudsShow"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Rick Suds Show
+        </a>{" "}
+        and{" "}
+        <a
+          href="https://archive.org/details/stan-major-show"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Stan Major
+        </a>
         .
       </p>
 
@@ -55,20 +76,43 @@ export default () => {
         All the shows and photos are also available for download on OneDrive.
       </p>
       <p>
-        <a href="https://t.co/dWGtbjuJlV?amp=1">Neil Rogers OneDrive</a>
+        <a
+          href="https://t.co/dWGtbjuJlV?amp=1"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i>Neil Rogers OneDrive &#x2197;</i>
+        </a>
       </p>
 
       <h3>Best of CDs</h3>
       <p>
         We have recovered every single "Best of CD" that Neil released. Some of
         the early years were recovered from cassette.{" "}
-        <a href="https://t.co/dWGtbjuJlV?amp=1">OneDrive</a> (the Sounds and CDs
-        folder),
-        <a href="https://www.youtube.com/playlist?list=PL8h2eiL0gjh9ccaSm8yEwCOWo7cHJ33Cd">
+        <a
+          href="https://t.co/dWGtbjuJlV?amp=1"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          OneDrive
+        </a>{" "}
+        (the Sounds and CDs folder),{" "}
+        <a
+          href="https://www.youtube.com/playlist?list=PL8h2eiL0gjh9ccaSm8yEwCOWo7cHJ33Cd"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          
           YouTube
         </a>
         , and{" "}
-        <a href="https://archive.org/details/@neil_rogers_radio">Archive.org</a>
+        <a
+          href="https://archive.org/details/@neil_rogers_radio"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Archive.org
+        </a>
         .
       </p>
       <p>
