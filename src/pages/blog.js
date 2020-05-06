@@ -1,11 +1,22 @@
 import React from "react"
-//import Img from "gatsby-image"
+import { Helmet } from "react-helmet"
+import Meta from "../pages/meta"
 import PrimaryLayout from "../layouts/PrimaryLayout"
 import img_miami_herald from "../images/miami_herald_neil.jpg"
 
 export default () => {
   return (
     <PrimaryLayout title="Blog">
+      <Meta/>
+      <Helmet>
+        <title>Neil Rogers Blog</title>
+        <meta
+          name="description"
+          content="News and updates related to the Neil Rogers audio restoration project."
+        />
+        <link rel="canonical" href="https://neilrogers.org/blog/" />
+      </Helmet>
+
       <p>
         Below is a collection of articles related to the audio recovery project.
       </p>

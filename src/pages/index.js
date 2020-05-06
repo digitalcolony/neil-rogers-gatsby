@@ -1,4 +1,5 @@
 import React from "react"
+import Meta from "../pages/meta"
 import { Link } from "gatsby"
 import PrimaryLayout from "../layouts/PrimaryLayout"
 import neil_image from "../images/neil-mask-radio.jpg"
@@ -6,6 +7,7 @@ import neil_image from "../images/neil-mask-radio.jpg"
 export default () => {
   return (
     <PrimaryLayout title="The Neil Rogers Show">
+      <Meta/>
       <p>
         NeilRogers.org is the work of a collection of fans dedicated to
         preserving the memory of radio’s Neil Rogers. Our primary goal is

@@ -6,7 +6,7 @@ const PrimaryLayout = props => (
     <Header showFilter={props.soundboard} title={props.title} />
     <main>
       <section>
-      <div>{props.children}</div>
+        <div>{props.children}</div>
       </section>
     </main>
   </div>

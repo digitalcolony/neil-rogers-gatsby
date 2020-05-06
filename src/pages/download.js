@@ -1,10 +1,22 @@
 import React from "react"
+import { Helmet } from "react-helmet"
+import Meta from "../pages/meta"
 import PrimaryLayout from "../layouts/PrimaryLayout"
 import neil_pope from "../images/pope.jpg"
 
 export default () => {
   return (
+    
     <PrimaryLayout title="Download, Stream or Torrent Audio">
+      <Meta/>
+      <Helmet>
+        <title>Download Neil Rogers</title>
+        <meta
+          name="description"
+          content="Download audio for the radio god Neil Rogers."
+        />
+        <link rel="canonical" href="https://neilrogers.org/download/" />
+      </Helmet>
       <p>
         The Neil Rogers Audio Restoration Project has recovered almost 5,000
         hours of commercial-free radio. In addition to Neil Rogers, we also have

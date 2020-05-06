@@ -1,4 +1,6 @@
 import React from "react"
+import { Helmet } from "react-helmet"
+import Meta from "../pages/meta"
 import PrimaryLayout from "../layouts/PrimaryLayout"
 import nms from "../images/NMS-Neil-1959.jpg"
 import neil_night from "../images/Neil_at_Night.jpg"
@@ -17,6 +19,15 @@ import zeta from "../images/zeta-94-9.jpg"
 export default () => {
   return (
     <PrimaryLayout title="Neil Rogers Timeline">
+      <Meta />
+      <Helmet>
+        <title>Neil Rogers Timeline</title>
+        <meta
+          name="description"
+          content="A brief history of radio's Neil Rogers."
+        />
+        <link rel="canonical" href="https://neilrogers.org/timeline/" />
+      </Helmet>
       <p>This is a brief history of radio legend Neil Rogers.</p>
       <h3>Childhood</h3>
       <p>

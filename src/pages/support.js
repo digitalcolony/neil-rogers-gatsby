@@ -1,9 +1,20 @@
 import React from "react"
+import { Helmet } from "react-helmet"
+import Meta from "../pages/meta"
 import PrimaryLayout from "../layouts/PrimaryLayout"
 
 export default () => {
   return (
     <PrimaryLayout title="Support">
+      <Meta/>
+      <Helmet>
+        <title>Support the Neil Rogers Audio Restoration Project</title>
+        <meta
+          name="description"
+          content="Here are the ways you can support the Neil Rogers Audio Restoration Project."
+        />
+        <link rel="canonical" href="https://neilrogers.org/support/" />
+      </Helmet>
       <p>
         There are several ways you can support the Neil Rogers Audio Restoration
         Project.
