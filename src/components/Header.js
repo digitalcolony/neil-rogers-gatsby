@@ -1,22 +1,30 @@
 import React from "react"
 import { Link } from "gatsby"
 
+const activeStyle = {
+  color: "black",
+}
+
 const Header = props => (
   <header>
     <nav>
-      <Link to="/"><em>Home</em></Link>
+      <Link to="/" activeStyle={activeStyle}>
+        Home
+      </Link>
       <ul>
         <li>
-          <Link to="/download/">Download</Link>
+          <Link to="/download/" activeStyle={activeStyle}>
+            Download
+          </Link>
         </li>
         <li>
-          <Link to="/timeline/">Timeline</Link>
+          <Link to="/timeline/" activeStyle={activeStyle}>Timeline</Link>
         </li>
         <li>
-          <Link to="/blog/">Blog</Link>
+          <Link to="/blog/" activeStyle={activeStyle}>Blog</Link>
         </li>
         <li>
-          <Link to="/support/">Support</Link>
+          <Link to="/support/" activeStyle={activeStyle}>Support</Link>
         </li>
         <li>Soundboard</li>
       </ul>
