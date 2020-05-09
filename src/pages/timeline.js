@@ -43,7 +43,7 @@ export default () => {
       </p>
 
       <p>
-        <img src={nms} alt="National Merit Scholarship" width="500" />
+        <img src={nms} alt="National Merit Scholarship" />
       </p>
 
       <h3>Early Radio in Upstate New York (1959-1963)</h3>
@@ -117,7 +117,7 @@ export default () => {
       </blockquote>
 
       <p>
-        <img src={wspb} alt="WSPB 1450" width="500" />
+        <img src={wspb} alt="WSPB 1450" />
       </p>
 
       <p>
@@ -245,7 +245,7 @@ export default () => {
       </p>
 
       <p>
-        <img src={wiod} alt="Neil Rogers WIOD" width="500" />
+        <img src={wiod} alt="Neil Rogers WIOD" />
       </p>
 
       <p>
@@ -280,7 +280,7 @@ export default () => {
       </p>
 
       <p>
-        <img src={wqam} alt="Neil Rogers WQAM" width="600" />
+        <img src={wqam} alt="Neil Rogers WQAM" />
       </p>
 
       <p>
@@ -294,7 +294,7 @@ export default () => {
       </p>
 
       <p>
-        <img src={neil_night} alt="Neil at Night TV" width="600" />
+        <img src={neil_night} alt="Neil at Night TV" />
       </p>
 
       <p>

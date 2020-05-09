@@ -7,6 +7,7 @@ export default () => {
       <meta charSet="utf-8" />
       <title>Neil Rogers Show</title>
       <link rel="canonical" href="https://neilrogers.org" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
       <meta
         name="description"
         href="Audio archives for Miami radio legend Neil Rogers"

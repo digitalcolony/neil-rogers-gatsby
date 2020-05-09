@@ -82,17 +82,15 @@ export default () => {
         URLs that might be clues as to what servers or backup archives these
         audio files might be found. <b>Please help us recover these shows!</b>
       </p>
-      <ul style={{ listStyleType: "none" }}>
-        <li>http://www.broadcast.com/radio/archives/wqam/rogers/</li>
-        <li>http://www.yahoo.com/radio/archives/wqam/rogers/</li>
-        <li>http://radio.yahoo.com//archives/wqam/rogers/</li>
-        <li>http://launch.yahoo.com/launchcast/archives/wqam/rogers/</li>
-        <li>http://new.music.yahoo.com/launchcast/archives/wqam/rogers/</li>
-        <li>http://music.yahoo.com/launchcast/archives/wqam/rogers/</li>
-        <li>
-          http://playlist.broadcast.com/makeplaylist.asp?id=844139 (example)
-        </li>
-      </ul>
+      {/* <ul style={{ listStyleType: "none" }}>
+        <li>www.broadcast.com/radio/archives/wqam/rogers/</li>
+        <li>www.yahoo.com/radio/archives/wqam/rogers/</li>
+        <li>radio.yahoo.com//archives/wqam/rogers/</li>
+        <li>launch.yahoo.com/launchcast/archives/wqam/rogers/</li>
+        <li>new.music.yahoo.com/launchcast/archives/wqam/rogers/</li>
+        <li>music.yahoo.com/launchcast/archives/wqam/rogers/</li>
+        <li>playlist.broadcast.com</li>
+      </ul> */}
       <p>
         Yahoo! will also have shows from 2000 to May 2002, which we need for our
         archives. I am absolutely convinced these shows exist somewhere on a

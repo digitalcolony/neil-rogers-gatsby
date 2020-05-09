@@ -1,14 +1,37 @@
 import React from "react"
 import { Helmet } from "react-helmet"
+import { graphql, useStaticQuery } from "gatsby"
+import Img from "gatsby-image"
 import Meta from "../pages/meta"
 import PrimaryLayout from "../layouts/PrimaryLayout"
-import neil_pope from "../images/pope.jpg"
+//import neil_pope from "../images/pope.jpg"
 
 export default () => {
+  const data = useStaticQuery(graphql`
+    query Images {
+      pope: file(relativePath: { eq: "images/pope.jpg" }) {
+        childImageSharp {
+          fixed {
+            ...GatsbyImageSharpFixed
+          }
+          fluid(
+            maxWidth: 500
+            maxHeight: 500
+            srcSetBreakpoints: [100, 200, 500]
+          ) {
+            ...GatsbyImageSharpFluid_withWebp
+            
+          }
+        }
+      }
+    }
+  `)
+
+  console.log(data)
+
   return (
-    
     <PrimaryLayout title="Download, Stream or Torrent Audio">
-      <Meta/>
+      <Meta />
       <Helmet>
         <title>Download Neil Rogers</title>
         <meta
@@ -17,6 +40,7 @@ export default () => {
         />
         <link rel="canonical" href="https://neilrogers.org/download/" />
       </Helmet>
+      <Img fixed={data.pope.childImageSharp.fixed} />
       <p>
         The Neil Rogers Audio Restoration Project has recovered almost 5,000
         hours of commercial-free radio. In addition to Neil Rogers, we also have
@@ -32,7 +56,7 @@ export default () => {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <b>Google Drive Spreadsheet &#x2197;</b>
+        <b>Spreadsheet &#x2197;</b>
       </a>
 
       <h3>YouTube</h3>
@@ -48,7 +72,7 @@ export default () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <i>youtube.com/c/NeilRogersRadio &#x2197;</i>
+          <i>YouTube &#x2197;</i>
         </a>
       </p>
 
@@ -60,7 +84,7 @@ export default () => {
       </p>
       <p>
         <a href="https://archive.org/details/@neil_rogers_radio">
-          <i>archive.org/details/@neil_rogers_radio &#x2197;</i>
+          <i>Archive &#x2197;</i>
         </a>
       </p>
       <p>
@@ -93,7 +117,7 @@ export default () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <i>Neil Rogers OneDrive &#x2197;</i>
+          <i>OneDrive &#x2197;</i>
         </a>
       </p>
 
@@ -106,7 +130,7 @@ export default () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          OneDrive
+          Best Of
         </a>{" "}
         (the Sounds and CDs folder),{" "}
         <a
@@ -114,7 +138,6 @@ export default () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          
           YouTube
         </a>
         , and{" "}
@@ -127,9 +150,9 @@ export default () => {
         </a>
         .
       </p>
-      <p>
+      {/* <p>
         <img src={neil_pope} alt="Neil Rogers Mask" />
-      </p>
+      </p> */}
     </PrimaryLayout>
   )
 }

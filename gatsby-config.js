@@ -10,6 +10,9 @@ module.exports = {
     title: "Neil Rogers",
   },
   plugins: [
+    "gatsby-plugin-react-helmet",
+    "gatsby-plugin-sharp",
+    "gatsby-transformer-sharp",
     {
       resolve: "gatsby-source-filesystem",
       options: {
@@ -17,22 +20,11 @@ module.exports = {
         path: `${__dirname}/src/`,
       },
     },
-    "gatsby-plugin-react-helmet",
-    "gatsby-transformer-sharp",
-    "gatsby-plugin-sharp",
     {
-      resolve: "gatsby-transformer-remark",
+      resolve: "gatsby-source-filesystem",
       options: {
-        plugins: [
-          "gatsby-remark-relative-images",
-          {
-            resolve: "gatsby-remark-images",
-            options: {
-              maxWidth: 650,
-              linkImagesToOriginal: false,
-            },
-          },
-        ],
+        name: "images",
+        path: `${__dirname}/src/images/`,
       },
     },
   ],
