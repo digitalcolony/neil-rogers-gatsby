@@ -1,22 +1,113 @@
 import React from "react"
 import { Helmet } from "react-helmet"
 import Meta from "../pages/meta"
+import { graphql, useStaticQuery } from "gatsby"
+import Img from "gatsby-image"
 import PrimaryLayout from "../layouts/PrimaryLayout"
-import nms from "../images/NMS-Neil-1959.jpg"
-import neil_night from "../images/Neil_at_Night.jpg"
-import neil_1985 from "../images/neil-1985.jpg"
-import neil_gay from "../images/Neil-comes-out.jpg"
-import neil_nutrition from "../images/neil-rogers-nutrition-1.jpg"
-import nrs from "../images/neil-rogers-show.jpg"
-import wiod from "../images/neil-rogers-wiod.jpg"
-import wkat from "../images/neil-rogers-wkat.jpg"
-import wqam from "../images/neil-rogers-wqam-560.jpg"
-import wsun from "../images/neil-rogers-wsun-douchebag2.jpg"
-import wnws from "../images/neil-wnws-1981.jpg"
-import wspb from "../images/wspb-1450.jpg"
-import zeta from "../images/zeta-94-9.jpg"
 
 export default () => {
+  const images = useStaticQuery(graphql`
+    query {
+      nms: file(relativePath: { eq: "images/neil_1959.jpg" }) {
+        childImageSharp {
+          fixed {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
+      wspb: file(relativePath: { eq: "images/wspb-1450.jpg" }) {
+        childImageSharp {
+          fixed {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
+      wkat: file(relativePath: { eq: "images/neil-rogers-wkat.jpg" }) {
+        childImageSharp {
+          fixed {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
+      gay: file(relativePath: { eq: "images/Neil-comes-out.jpg" }) {
+        childImageSharp {
+          fixed {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
+      nutrition: file(
+        relativePath: { eq: "images/neil-rogers-nutrition-1.jpg" }
+      ) {
+        childImageSharp {
+          fixed {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
+      wnws: file(relativePath: { eq: "images/neil-wnws-1981.jpg" }) {
+        childImageSharp {
+          fixed {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
+      neil_1985: file(relativePath: { eq: "images/neil-1985.jpg" }) {
+        childImageSharp {
+          fixed {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
+      night: file(relativePath: { eq: "images/Neil_at_Night.jpg" }) {
+        childImageSharp {
+          fixed {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
+      neil_rogers_show: file(
+        relativePath: { eq: "images/neil-rogers-show.jpg" }
+      ) {
+        childImageSharp {
+          fixed {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
+      wiod: file(relativePath: { eq: "images/neil-rogers-wiod.jpg" }) {
+        childImageSharp {
+          fixed {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
+      wqam: file(relativePath: { eq: "images/neil-rogers-wqam-560.jpg" }) {
+        childImageSharp {
+          fixed {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
+      wsun: file(
+        relativePath: { eq: "images/neil-rogers-wsun-douchebag2.jpg" }
+      ) {
+        childImageSharp {
+          fixed {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
+      zeta: file(relativePath: { eq: "images/zeta-94-9.jpg" }) {
+        childImageSharp {
+          fixed {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
+    }
+  `)
+
   return (
     <PrimaryLayout title="Neil Rogers Timeline">
       <Meta />
@@ -42,9 +133,10 @@ export default () => {
         Canandaigua Academy in 1959.
       </p>
 
-      <p>
-        <img src={nms} alt="National Merit Scholarship" />
-      </p>
+      <Img
+        fixed={images.nms.childImageSharp.fixed}
+        alt={"Neil Rogers - 1959 National Merit Scholarship"}
+      />
 
       <h3>Early Radio in Upstate New York (1959-1963)</h3>
 
@@ -105,20 +197,20 @@ export default () => {
         1450 in Sarasota, FL.
       </p>
 
-      <blockquote>
-        <em>
-          In 1973, Rogers moved to Sarasota, where quite by accident he did his
-          first talk radio show. The station hired a retiree from Pittsburgh to
-          do a talk show, but on his first day, the fellow couldn’t figure out
-          to work the phone and his guest didn’t show up. The second day, the
-          retiree’s blood pressure soared and his nose bled. Rogers, who was
-          spinning records at the station, came to the rescue.
-        </em>
-      </blockquote>
-
-      <p>
-        <img src={wspb} alt="WSPB 1450" />
-      </p>
+      <div style={{ width: "400px" }}>
+        <blockquote>
+          <em>
+            In 1973, Rogers moved to Sarasota, where quite by accident he did
+            his first talk radio show. The station hired a retiree from
+            Pittsburgh to do a talk show, but on his first day, the fellow
+            couldn’t figure out to work the phone and his guest didn’t show up.
+            The second day, the retiree’s blood pressure soared and his nose
+            bled. Rogers, who was spinning records at the station, came to the
+            rescue.
+          </em>
+        </blockquote>
+      </div>
+      <Img fixed={images.wspb.childImageSharp.fixed} alt={"Neil Rogers at WSPB 1450"} />
 
       <p>
         <em>(Source: Miami Herald Tropic 624-0191, April 28, 1985)</em>
@@ -140,16 +232,11 @@ export default () => {
         worked a few weekends on WIOD playing records (May 30, 1990, @55:28).
       </p>
 
-      <p>
-        <img src={wkat} alt="WKAT" width="500" />
-      </p>
+      <Img fixed={images.wkat.childImageSharp.fixed} alt={"Neil Rogers at WKAT"} />
 
       <p>On December 17, 1976 Neil came out as gay on the air.</p>
 
-      <p>
-        <img src={neil_gay} alt="Neil Comes Out" />
-      </p>
-
+      <Img fixed={images.gay.childImageSharp.fixed} alt={"Neil Rogers Comes Out as Gay"} />
       <p>
         <em>(Source: Lakeland Ledger December 19, 1976)</em>
       </p>
@@ -161,9 +248,10 @@ export default () => {
         Souci.
       </p>
 
-      <p>
-        <img src={neil_nutrition} alt="Neil Rogers Nutrition" />
-      </p>
+      <Img
+        fixed={images.nutrition.childImageSharp.fixed}
+        alt={"Neil Rogers Nutrition"}
+      />
 
       <p>
         <em>(Source: Neil Rogers Show November 15, 2000 @2:02:00)</em>
@@ -184,9 +272,10 @@ export default () => {
         and 1983 on TV).
       </p>
 
-      <p>
-        <img src={wnws} alt="Miami Hurricanes" />
-      </p>
+      <Img
+        fixed={images.wnws.childImageSharp.fixed}
+        alt={"Miami Hurricanes and Neil Rogers"}
+      />
 
       <p>
         <a href="https://youtu.be/4zajHaXIUz4">
@@ -219,9 +308,10 @@ export default () => {
         Midnight. On September 29, 1986, Neil moves his show to 10 AM – 2 PM.
       </p>
 
-      <p>
-        <img src={neil_1985} alt="94 News" />
-      </p>
+      <Img
+        fixed={images.neil_1985.childImageSharp.fixed}
+        alt={"94 News - Neil Rogers"}
+      />
 
       <h3>Zeta 4 (1987)</h3>
 
@@ -230,9 +320,10 @@ export default () => {
         Zeta 4.
       </p>
 
-      <p>
-        <img src={zeta} alt="Zeta 4" />
-      </p>
+      <Img
+        fixed={images.zeta.childImageSharp.fixed}
+        alt={"Neil Rogers at Zeta 4"}
+      />
 
       <p>On November 1, 1988, Neil did his last show on Zeta 4.</p>
       <h3>WIOD (1988 – 1997)</h3>
@@ -244,18 +335,19 @@ export default () => {
         weeks later.
       </p>
 
-      <p>
-        <img src={wiod} alt="Neil Rogers WIOD" />
-      </p>
-
+      <Img
+        fixed={images.wiod.childImageSharp.fixed}
+        alt={"Neil Rogers at WIOD"}
+      />
       <p>
         On June 22, 1992 the WSUN Tampa Bay simulcast begins. On April 29, 1994,
         the WSUN simulcast of the Neil Rogers Show ended. (date not confirmed)
       </p>
 
-      <p>
-        <img src={wsun} alt="WSUN Douchebag" />
-      </p>
+      <Img
+        fixed={images.wsun.childImageSharp.fixed}
+        alt={"WSUN Douchebag - Neil Rogers"}
+      />
 
       <p>
         On December 20, 1996, the Internet stream of the Neil Rogers Show
@@ -279,9 +371,10 @@ export default () => {
         on December 30, 1997.
       </p>
 
-      <p>
-        <img src={wqam} alt="Neil Rogers WQAM" />
-      </p>
+      <Img
+        fixed={images.wqam.childImageSharp.fixed}
+        alt={"Neil Rogers at WQAM"}
+      />
 
       <p>
         Neil’s TV show “Neil at Night” began broadcasting on Monday June 8th.
@@ -293,9 +386,10 @@ export default () => {
         </em>
       </p>
 
-      <p>
-        <img src={neil_night} alt="Neil at Night TV" />
-      </p>
+      <Img
+        fixed={images.night.childImageSharp.fixed}
+        alt={"Neil at Night TV"}
+      />
 
       <p>
         Neil’s last public appearance was on May 17, 2008 at Gulfstream Park and
@@ -330,10 +424,10 @@ export default () => {
         </a>
       </p>
 
-      <p>
-        <img src={nrs} alt="Neil Rogers Show with Jorge Rodriguez" />
-      </p>
-
+      <Img
+        fixed={images.neil_rogers_show.childImageSharp.fixed}
+        alt={"Neil Rogers Show with Jorge Rodriguez"}
+      />
       <p>
         <em>
           Artwork by <a href="http://thepowwowshow.net/">Luis Amado</a>
@@ -342,6 +436,16 @@ export default () => {
 
       <p>
         In 2016, Neil Rogers was inducted to the National Radio Hall of Fame.
+      </p>
+      <p>
+        <em>
+          Photos used in this timeline plus hundreds more can be viewed and
+          downloaded on the{" "}
+          <a href="https://www.flickr.com/photos/neilrogersradio">
+            Neil Rogers Flickr
+          </a>{" "}
+          account.
+        </em>
       </p>
     </PrimaryLayout>
   )

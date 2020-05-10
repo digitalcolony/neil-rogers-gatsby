@@ -18,13 +18,14 @@ const Header = props => (
           </Link>
         </li>
         <li>
-          <Link to="/timeline/" activeStyle={activeStyle}>Timeline</Link>
+          <Link to="/timeline/" activeStyle={activeStyle}>
+            Timeline
+          </Link>
         </li>
         <li>
-          <Link to="/blog/" activeStyle={activeStyle}>Blog</Link>
-        </li>
-        <li>
-          <Link to="/support/" activeStyle={activeStyle}>Support</Link>
+          <Link to="/docs/" activeStyle={activeStyle}>
+            Docs
+          </Link>
         </li>
         <li>Soundboard</li>
       </ul>

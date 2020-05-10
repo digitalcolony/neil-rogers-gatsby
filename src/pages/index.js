@@ -1,13 +1,25 @@
 import React from "react"
 import Meta from "../pages/meta"
 import { Link } from "gatsby"
+import { graphql, useStaticQuery } from "gatsby"
+import Img from "gatsby-image"
 import PrimaryLayout from "../layouts/PrimaryLayout"
-import neil_image from "../images/neil-mask-radio.jpg"
 
 export default () => {
+  const images = useStaticQuery(graphql`
+    query {
+      neil_mask: file(relativePath: { eq: "images/neil-mask-radio.jpg" }) {
+        childImageSharp {
+          fixed {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
+    }
+  `)
   return (
     <PrimaryLayout title="The Neil Rogers Show">
-      <Meta/>
+      <Meta />
       <p>
         NeilRogers.org is the work of a collection of fans dedicated to
         preserving the memory of radio’s Neil Rogers. Our primary goal is
@@ -18,15 +30,15 @@ export default () => {
       </p>
 
       <p>
-        If you have audio from Neil Rogers that you would like to share, we would
-        love to add it to our archives. In addition to Neil, we also are
+        If you have audio from Neil Rogers that you would like to share, we
+        would love to add it to our archives. In addition to Neil, we also are
         archiving other Florida talk shows. Our email is{" "}
         <b>audio@neilrogers.org</b>. Thank you.
       </p>
-
-      <p>
-        <img src={neil_image} alt="Neil Rogers Mask" />
-      </p>
+      <Img
+        fixed={images.neil_mask.childImageSharp.fixed}
+        alt={"Neil Rogers - Radio Legend"}
+      />
 
       <p>
         To learn more about radio legend Neil Rogers see his page on{" "}

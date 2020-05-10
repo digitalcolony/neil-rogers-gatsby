@@ -1,26 +1,58 @@
 import React from "react"
 import { Helmet } from "react-helmet"
-import Meta from "../pages/meta"
+import Meta from "./meta"
 import PrimaryLayout from "../layouts/PrimaryLayout"
 
 export default () => {
   return (
-    <PrimaryLayout title="Support">
+    <PrimaryLayout title="Docs">
       <Meta />
       <Helmet>
-        <title>Support the Neil Rogers Audio Restoration Project</title>
+        <title>Neil Rogers Blog</title>
         <meta
           name="description"
-          content="Here are the ways you can support the Neil Rogers Audio Restoration Project."
+          content="News and updates related to the Neil Rogers audio restoration project."
         />
-        <link rel="canonical" href="https://neilrogers.org/support/" />
+        <link rel="canonical" href="https://neilrogers.org/blog/" />
       </Helmet>
+
+      <h3>Tributes</h3>
+      <p>
+        <a href="https://medium.com/@CriticalMAS/tribute-to-eric-harold-neil-rogers-780f7277d5f1">
+          Tribute to Eric Harold
+        </a> - Eric was Neil's web guy throughout the WQAM years. 
+      </p>
+      <p>
+        <a href="https://medium.com/@CriticalMAS/tribute-to-john-baker-neil-rogers-2c9127024b51">
+          Tribute to John Baker
+        </a> - John was the greatest Neil historian ever and was essential in helping us recover so much 
+        of Neil's memory. 
+      </p>
+
+      <h3>Media</h3>
+      <p>
+        <a href="https://medium.com/@CriticalMAS/miami-herald-covers-the-neil-rogers-audio-recovery-project-neil-rogers-3ab76861ceed">
+          Miami Herald Covers the Neil Rogers Audio Recovery Project
+        </a>
+      </p>
+      <p>
+        <a href="https://medium.com/@CriticalMAS/neil-rogers-2016-radio-hall-of-fame-induction-neil-rogers-5dd2906f7bf9">
+          Neil Rogers 2016 Radio Hall of Fame Induction
+        </a>
+      </p>
+      <p>
+        <a href="https://medium.com/@CriticalMAS/interview-with-radio-ink-january-2014-neil-rogers-b43bfbb83786">
+          Interview with Radio Ink (January 2014)
+        </a>
+      </p>
+
+      <h3>Support</h3>
       <p>
         There are several ways you can support the Neil Rogers Audio Restoration
         Project.
       </p>
 
-      <h3>#1 Donate Audio</h3>
+      <h4>#1 Donate Audio</h4>
       <p>
         Do you have any audio of the Neil Rogers Show or other South Florida
         talk radio shows that you would like to share? Check our archives to see
@@ -38,7 +70,7 @@ export default () => {
         Email <b>audio@neilrogers.org</b>. Thank you!
       </p>
 
-      <h3>#2 Listen and Write Show Notes</h3>
+      <h4>#2 Listen and Write Show Notes</h4>
       <p>
         Our goal is to not only collect as much audio as possible but to index
         all the shows and make the topics searchable. Many of the shows from
@@ -66,7 +98,7 @@ export default () => {
         </li>
       </ol>
 
-      <h3>#3 Share and Like</h3>
+      <h4>#3 Share and Like</h4>
       <p>
         Spread the word to others about Uncle Neil by sharing links to
         everything we have saved. Give a like to the shows. The more fans that
@@ -74,7 +106,7 @@ export default () => {
         find the fans that have more audio to add to our collection.
       </p>
 
-      <h3>#4 Do You Know Someone That Works For Yahoo!?</h3>
+      <h4>#4 Do You Know Someone That Works For Yahoo!?</h4>
       <p>
         In 1999 Yahoo! acquired Broadcast.com, which archived the Neil Rogers
         Show in the early days. We need many of the shows from December 30,
@@ -84,20 +116,26 @@ export default () => {
         <b>Please help us recover these shows!</b>
       </p>
 
-        <ul style={{ listStyleType: "none", "wordBreak": "break-all" }}>
-          <li>www.broadcast.com/radio/archives/wqam/rogers/</li>
-          <li>www.yahoo.com/radio/archives/wqam/rogers/</li>
-          <li>radio.yahoo.com//archives/wqam/rogers/</li>
-          <li>launch.yahoo.com/launchcast/archives/wqam/rogers/</li>
-          <li>new.music.yahoo.com/launchcast/archives/wqam/rogers/</li>
-          <li>music.yahoo.com/launchcast/archives/wqam/rogers/</li>
-          <li>playlist.broadcast.com</li>
-        </ul>
- 
+      <ul style={{ listStyleType: "none", wordBreak: "break-all" }}>
+        <li>www.broadcast.com/radio/archives/wqam/rogers/</li>
+        <li>www.yahoo.com/radio/archives/wqam/rogers/</li>
+        <li>radio.yahoo.com//archives/wqam/rogers/</li>
+        <li>launch.yahoo.com/launchcast/archives/wqam/rogers/</li>
+        <li>new.music.yahoo.com/launchcast/archives/wqam/rogers/</li>
+        <li>music.yahoo.com/launchcast/archives/wqam/rogers/</li>
+        <li>playlist.broadcast.com</li>
+      </ul>
+
       <p>
         Yahoo! will also have shows from 2000 to May 2002, which we need for our
         archives. I am absolutely convinced these shows exist somewhere on a
         Yahoo! server that the public does not have access to.
+      </p>
+
+      <h3>Privacy Policy</h3>
+      <p>
+        The 2020 rewrite of NeilRogers.org does not use any cookies or tracking
+        or collect any user data.
       </p>
     </PrimaryLayout>
   )

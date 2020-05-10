@@ -4,30 +4,19 @@ import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
 import Meta from "../pages/meta"
 import PrimaryLayout from "../layouts/PrimaryLayout"
-//import neil_pope from "../images/pope.jpg"
 
 export default () => {
-  const data = useStaticQuery(graphql`
-    query Images {
+  const images = useStaticQuery(graphql`
+    query  {
       pope: file(relativePath: { eq: "images/pope.jpg" }) {
         childImageSharp {
           fixed {
             ...GatsbyImageSharpFixed
           }
-          fluid(
-            maxWidth: 500
-            maxHeight: 500
-            srcSetBreakpoints: [100, 200, 500]
-          ) {
-            ...GatsbyImageSharpFluid_withWebp
-            
-          }
         }
       }
     }
   `)
-
-  console.log(data)
 
   return (
     <PrimaryLayout title="Download, Stream or Torrent Audio">
@@ -40,10 +29,10 @@ export default () => {
         />
         <link rel="canonical" href="https://neilrogers.org/download/" />
       </Helmet>
-      <Img fixed={data.pope.childImageSharp.fixed} />
+      
       <p>
-        The Neil Rogers Audio Restoration Project has recovered almost 5,000
-        hours of commercial-free radio. In addition to Neil Rogers, we also have
+        The Neil Rogers Audio Restoration Project has recovered almost <mark><b>5,000
+        hours of commercial-free radio</b></mark>. In addition to Neil Rogers, we also have
         shows from other South Florida radio icons. You are free to use the
         links below to download everything for free. No account is required.
       </p>
@@ -150,9 +139,10 @@ export default () => {
         </a>
         .
       </p>
-      {/* <p>
-        <img src={neil_pope} alt="Neil Rogers Mask" />
-      </p> */}
+      <Img
+        fixed={images.pope.childImageSharp.fixed}
+        alt={"Neil Rogers as Pope"}
+      />
     </PrimaryLayout>
   )
 }
