@@ -13,20 +13,22 @@ export default () => {
           name="description"
           content="News and updates related to the Neil Rogers audio restoration project."
         />
-        <link rel="canonical" href="https://neilrogers.org/blog/" />
+        <link rel="canonical" href="https://neilrogers.org/docs/" />
       </Helmet>
 
       <h3>Tributes</h3>
       <p>
         <a href="https://medium.com/@CriticalMAS/tribute-to-eric-harold-neil-rogers-780f7277d5f1">
           Tribute to Eric Harold
-        </a> - Eric was Neil's web guy throughout the WQAM years. 
+        </a>{" "}
+        - Eric was Neil's web guy throughout the WQAM years.
       </p>
       <p>
         <a href="https://medium.com/@CriticalMAS/tribute-to-john-baker-neil-rogers-2c9127024b51">
           Tribute to John Baker
-        </a> - John was the greatest Neil historian ever and was essential in helping us recover so much 
-        of Neil's memory. 
+        </a>{" "}
+        - John was the greatest Neil historian ever and was essential in helping
+        us recover so much of Neil's memory.
       </p>
 
       <h3>Media</h3>
