@@ -1,4 +1,5 @@
 import React from "react"
+import { graphql } from "gatsby"
 import { Helmet } from "react-helmet"
 import Meta from "./meta"
 import PrimaryLayout from "../layouts/PrimaryLayout"
@@ -16,6 +17,7 @@ export default ({ data }) => {
         />
         <link rel="canonical" href="https://neilrogers.org/soundboard/" />
       </Helmet>
+
       {data.dataJson.drops.map(drop => (
         <Sound src={drop.mp3} name={drop.name} artist={drop.artist} />
       ))}

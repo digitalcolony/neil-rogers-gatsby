@@ -20,16 +20,15 @@ const Sound = props => {
       >
         <source src={src} preload="none" type="audio/mp3" />
       </audio>
-      
-        <button
-          id={buttonId}
-          className={soundStyles.myButton}
-          onClick={() => document.getElementById(audioId).play()}
-          title={artist}
-        >
-          {name}
-        </button>
-    
+
+      <button
+        id={buttonId}
+        className={soundStyles.myButton}
+        onClick={() => document.getElementById(audioId).play()}
+        title={artist}
+      >
+        {name}
+      </button>
     </span>
   )
 }

@@ -5,7 +5,7 @@ export default () => {
   return (
     <Helmet>
       <meta charSet="utf-8" />
-      <title>Neil Rogers Show</title>
+      <title>The Neil Rogers Show - Preserving the Legacy of the Radio Legend</title>
       <link rel="canonical" href="https://neilrogers.org" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
       <meta
