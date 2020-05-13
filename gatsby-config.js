@@ -8,8 +8,10 @@ module.exports = {
   /* Your site config here */
   siteMetadata: {
     title: "Neil Rogers",
+    siteUrl: "https://neil-rogers.netlify.app/",
   },
   plugins: [
+    "gatsby-plugin-sitemap",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
