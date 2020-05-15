@@ -10,8 +10,10 @@ export default () => {
     query {
       pope: file(relativePath: { eq: "images/pope.jpg" }) {
         childImageSharp {
-          fixed {
-            ...GatsbyImageSharpFixed
+          fluid {
+            presentationWidth
+            presentationHeight
+            ...GatsbyImageSharpFluid
           }
         }
       }
@@ -126,46 +128,49 @@ export default () => {
           </p>
         </aside>
       </section>
-      <section>
+      <figure style={{ "max-width": "670px", "marginLeft": "auto", "marginRight": "auto" }}>
         <Img
-          fixed={images.pope.childImageSharp.fixed}
+          fluid={images.pope.childImageSharp.fluid}
           alt={"Neil Rogers as Pope"}
         />
+        <figcaption>Neil Rogers as Pope</figcaption>
+      </figure>
 
+      <section>
         <p>
           We have recovered every single "Best of CD" that Neil released. Some
-          of the early years were recovered from cassette.{" "}
-          <ul>
-            <li>
-              <a
-                href="https://1drv.ms/u/s!AgQrITkx1J-8pPcHiQJAWd_dwKJKGw?e=yc35P0"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                OneDrive
-              </a>{" "}
-              (the Sounds and CDs folder)
-            </li>
-            <li>
-              <a
-                href="https://www.youtube.com/playlist?list=PL8h2eiL0gjh9ccaSm8yEwCOWo7cHJ33Cd"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                YouTube
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://archive.org/details/@neil_rogers_radio"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Archive.org
-              </a>
-            </li>
-          </ul>
+          of the early years were recovered from cassette.
         </p>
+        <ul>
+          <li>
+            <a
+              href="https://1drv.ms/u/s!AgQrITkx1J-8pPcHiQJAWd_dwKJKGw?e=yc35P0"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              OneDrive
+            </a>{" "}
+            (the Sounds and CDs folder)
+          </li>
+          <li>
+            <a
+              href="https://www.youtube.com/playlist?list=PL8h2eiL0gjh9ccaSm8yEwCOWo7cHJ33Cd"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              YouTube
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://archive.org/details/@neil_rogers_radio"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Archive.org
+            </a>
+          </li>
+        </ul>
       </section>
     </PrimaryLayout>
   )

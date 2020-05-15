@@ -13,12 +13,22 @@ export default () => {
           fixed {
             ...GatsbyImageSharpFixed
           }
+          fluid {
+            presentationWidth
+            presentationHeight
+            ...GatsbyImageSharpFluid
+          }
         }
       }
       wspb: file(relativePath: { eq: "images/wspb-1450.jpg" }) {
         childImageSharp {
           fixed {
             ...GatsbyImageSharpFixed
+          }
+          fluid {
+            presentationWidth
+            presentationHeight
+            ...GatsbyImageSharpFluid
           }
         }
       }
@@ -27,12 +37,22 @@ export default () => {
           fixed {
             ...GatsbyImageSharpFixed
           }
+          fluid {
+            presentationWidth
+            presentationHeight
+            ...GatsbyImageSharpFluid
+          }
         }
       }
       gay: file(relativePath: { eq: "images/Neil-comes-out.jpg" }) {
         childImageSharp {
           fixed {
             ...GatsbyImageSharpFixed
+          }
+          fluid {
+            presentationWidth
+            presentationHeight
+            ...GatsbyImageSharpFluid
           }
         }
       }
@@ -43,12 +63,22 @@ export default () => {
           fixed {
             ...GatsbyImageSharpFixed
           }
+          fluid {
+            presentationWidth
+            presentationHeight
+            ...GatsbyImageSharpFluid
+          }
         }
       }
       wnws: file(relativePath: { eq: "images/neil-wnws-1981.jpg" }) {
         childImageSharp {
           fixed {
             ...GatsbyImageSharpFixed
+          }
+          fluid {
+            presentationWidth
+            presentationHeight
+            ...GatsbyImageSharpFluid
           }
         }
       }
@@ -57,12 +87,22 @@ export default () => {
           fixed {
             ...GatsbyImageSharpFixed
           }
+          fluid {
+            presentationWidth
+            presentationHeight
+            ...GatsbyImageSharpFluid
+          }
         }
       }
       night: file(relativePath: { eq: "images/Neil_at_Night.jpg" }) {
         childImageSharp {
           fixed {
             ...GatsbyImageSharpFixed
+          }
+          fluid {
+            presentationWidth
+            presentationHeight
+            ...GatsbyImageSharpFluid
           }
         }
       }
@@ -73,6 +113,11 @@ export default () => {
           fixed {
             ...GatsbyImageSharpFixed
           }
+          fluid {
+            presentationWidth
+            presentationHeight
+            ...GatsbyImageSharpFluid
+          }
         }
       }
       wiod: file(relativePath: { eq: "images/neil-rogers-wiod.jpg" }) {
@@ -80,12 +125,22 @@ export default () => {
           fixed {
             ...GatsbyImageSharpFixed
           }
+          fluid {
+            presentationWidth
+            presentationHeight
+            ...GatsbyImageSharpFluid
+          }
         }
       }
       wqam: file(relativePath: { eq: "images/neil-rogers-wqam-560.jpg" }) {
         childImageSharp {
           fixed {
             ...GatsbyImageSharpFixed
+          }
+          fluid {
+            presentationWidth
+            presentationHeight
+            ...GatsbyImageSharpFluid
           }
         }
       }
@@ -96,12 +151,22 @@ export default () => {
           fixed {
             ...GatsbyImageSharpFixed
           }
+          fluid {
+            presentationWidth
+            presentationHeight
+            ...GatsbyImageSharpFluid
+          }
         }
       }
       zeta: file(relativePath: { eq: "images/zeta-94-9.jpg" }) {
         childImageSharp {
           fixed {
             ...GatsbyImageSharpFixed
+          }
+          fluid {
+            presentationWidth
+            presentationHeight
+            ...GatsbyImageSharpFluid
           }
         }
       }
@@ -132,11 +197,13 @@ export default () => {
         Canandaigua New York. Neil won a National Merit Scholarship at
         Canandaigua Academy in 1959.
       </p>
-
-      <Img
-        fixed={images.nms.childImageSharp.fixed}
-        alt={"Neil Rogers - 1959 National Merit Scholarship"}
-      />
+      <figure style={{ "max-width": "600px" }}>
+        <Img
+          fluid={images.nms.childImageSharp.fluid}
+          alt={"Neil Rogers - 1959 National Merit Scholarship"}
+        />
+        <figcaption>Neil Rogers - 1959 National Merit Scholarship</figcaption>
+      </figure>
 
       <h3>Early Radio in Upstate New York (1959-1963)</h3>
 
@@ -210,8 +277,14 @@ export default () => {
           </em>
         </blockquote>
       </div>
-      <Img fixed={images.wspb.childImageSharp.fixed} alt={"Neil Rogers at WSPB 1450"} />
 
+      <figure style={{ "max-width": "600px" }}>
+        <Img
+          fluid={images.wspb.childImageSharp.fluid}
+          alt={"Neil Rogers at WSPB 1450"}
+        />
+        <figcaption>Neil Rogers at WSPB 1450</figcaption>
+      </figure>
       <p>
         <em>(Source: Miami Herald Tropic 624-0191, April 28, 1985)</em>
       </p>
@@ -232,14 +305,22 @@ export default () => {
         worked a few weekends on WIOD playing records (May 30, 1990, @55:28).
       </p>
 
-      <Img fixed={images.wkat.childImageSharp.fixed} alt={"Neil Rogers at WKAT"} />
-
+      <figure style={{ "max-width": "600px" }}>
+        <Img
+          fluid={images.wkat.childImageSharp.fluid}
+          alt={"Neil Rogers at WKAT"}
+        />
+        <figcaption>Neil Rogers at WKAT</figcaption>
+      </figure>
       <p>On December 17, 1976 Neil came out as gay on the air.</p>
 
-      <Img fixed={images.gay.childImageSharp.fixed} alt={"Neil Rogers Comes Out as Gay"} />
-      <p>
-        <em>(Source: Lakeland Ledger December 19, 1976)</em>
-      </p>
+      <figure style={{ "max-width": "600px" }}>
+        <Img
+          fluid={images.gay.childImageSharp.fluid}
+          alt={"Neil Rogers Comes Out as Gay"}
+        />
+        <figcaption>Source: Lakeland Ledger December 19, 1976</figcaption>
+      </figure>
 
       <h3>Neil Rogers Nutrition (1977)</h3>
 
@@ -248,13 +329,15 @@ export default () => {
         Souci.
       </p>
 
-      <Img
-        fixed={images.nutrition.childImageSharp.fixed}
-        alt={"Neil Rogers Nutrition"}
-      />
-
+      <figure style={{ "max-width": "600px" }}>
+        <Img
+          fluid={images.nutrition.childImageSharp.fluid}
+          alt={"Neil Rogers Nutrition"}
+        />
+        <figcaption>Neil Rogers Nutrition</figcaption>
+      </figure>
       <p>
-        <em>(Source: Neil Rogers Show November 15, 2000 @2:02:00)</em>
+        <em>Source: Neil Rogers Show November 15, 2000 @2:02:00</em>
       </p>
 
       <h3>WNWS (1978)</h3>
@@ -272,10 +355,13 @@ export default () => {
         and 1983 on TV).
       </p>
 
-      <Img
-        fixed={images.wnws.childImageSharp.fixed}
-        alt={"Miami Hurricanes and Neil Rogers"}
-      />
+      <figure style={{ "max-width": "600px" }}>
+        <Img
+          fluid={images.wnws.childImageSharp.fluid}
+          alt={"Miami Hurricanes and Neil Rogers"}
+        />
+        <figcaption>Miami Hurricanes and Neil Rogers</figcaption>
+      </figure>
 
       <p>
         <a href="https://youtu.be/4zajHaXIUz4">
@@ -308,10 +394,13 @@ export default () => {
         Midnight. On September 29, 1986, Neil moves his show to 10 AM – 2 PM.
       </p>
 
-      <Img
-        fixed={images.neil_1985.childImageSharp.fixed}
-        alt={"94 News - Neil Rogers"}
-      />
+      <figure style={{ "max-width": "600px" }}>
+        <Img
+          fluid={images.neil_1985.childImageSharp.fluid}
+          alt={"94 News - Neil Rogers"}
+        />
+        <figcaption>94 News - Neil Rogers</figcaption>
+      </figure>
 
       <h3>Zeta 4 (1987)</h3>
 
@@ -320,10 +409,13 @@ export default () => {
         Zeta 4.
       </p>
 
-      <Img
-        fixed={images.zeta.childImageSharp.fixed}
-        alt={"Neil Rogers at Zeta 4"}
-      />
+      <figure style={{ "max-width": "600px" }}>
+        <Img
+          fluid={images.zeta.childImageSharp.fluid}
+          alt={"Neil Rogers at Zeta 4"}
+        />
+        <figcaption>Neil Rogers at Zeta 4</figcaption>
+      </figure>
 
       <p>On November 1, 1988, Neil did his last show on Zeta 4.</p>
       <h3>WIOD (1988 – 1997)</h3>
@@ -335,19 +427,25 @@ export default () => {
         weeks later.
       </p>
 
-      <Img
-        fixed={images.wiod.childImageSharp.fixed}
-        alt={"Neil Rogers at WIOD"}
-      />
+      <figure style={{ "max-width": "600px" }}>
+        <Img
+          fixed={images.wiod.childImageSharp.fixed}
+          alt={"Neil Rogers at WIOD"}
+        />
+        <figcaption>Neil Rogers at WIOD</figcaption>
+      </figure>
       <p>
         On June 22, 1992 the WSUN Tampa Bay simulcast begins. On April 29, 1994,
         the WSUN simulcast of the Neil Rogers Show ended. (date not confirmed)
       </p>
 
-      <Img
-        fixed={images.wsun.childImageSharp.fixed}
-        alt={"WSUN Douchebag - Neil Rogers"}
-      />
+      <figure style={{ "max-width": "600px" }}>
+        <Img
+          fluid={images.wsun.childImageSharp.fluid}
+          alt={"WSUN Douchebag - Neil Rogers"}
+        />
+        <figcaption>WSUN Douchebag - Neil Rogers</figcaption>
+      </figure>
 
       <p>
         On December 20, 1996, the Internet stream of the Neil Rogers Show
@@ -371,10 +469,13 @@ export default () => {
         on December 30, 1997.
       </p>
 
-      <Img
-        fixed={images.wqam.childImageSharp.fixed}
-        alt={"Neil Rogers at WQAM"}
-      />
+      <figure style={{ "max-width": "600px" }}>
+        <Img
+          fluid={images.wqam.childImageSharp.fluid}
+          alt={"Neil Rogers at WQAM"}
+        />
+        <figcaption>Neil Rogers at WQAM</figcaption>
+      </figure>
 
       <p>
         Neil’s TV show “Neil at Night” began broadcasting on Monday June 8th.
@@ -386,10 +487,13 @@ export default () => {
         </em>
       </p>
 
-      <Img
-        fixed={images.night.childImageSharp.fixed}
-        alt={"Neil at Night TV"}
-      />
+      <figure style={{ "max-width": "600px" }}>
+        <Img
+          fluid={images.night.childImageSharp.fluid}
+          alt={"Neil at Night TV"}
+        />
+        <figcaption>Neil at Night TV</figcaption>
+      </figure>
 
       <p>
         Neil’s last public appearance was on May 17, 2008 at Gulfstream Park and
@@ -424,10 +528,14 @@ export default () => {
         </a>
       </p>
 
-      <Img
-        fixed={images.neil_rogers_show.childImageSharp.fixed}
-        alt={"Neil Rogers Show with Jorge Rodriguez"}
-      />
+      <figure style={{ "max-width": "600px" }}>
+        <Img
+          fluid={images.neil_rogers_show.childImageSharp.fluid}
+          alt={"Neil Rogers Show with Jorge Rodriguez"}
+        />
+        <figcaption>Neil Rogers Show with Jorge Rodriguez</figcaption>
+      </figure>
+
       <p>
         <em>
           Artwork by <a href="http://thepowwowshow.net/">Luis Amado</a>
