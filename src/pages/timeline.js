@@ -197,6 +197,7 @@ export default () => {
         Canandaigua New York. Neil won a National Merit Scholarship at
         Canandaigua Academy in 1959.
       </p>
+
       <figure style={{ "max-width": "600px" }}>
         <Img
           fluid={images.nms.childImageSharp.fluid}
