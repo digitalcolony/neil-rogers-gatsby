@@ -265,7 +265,7 @@ export default () => {
         1450 in Sarasota, FL.
       </p>
 
-      <div style={{ width: "400px" }}>
+      <div style={{ "max-width": "400px" }}>
         <blockquote>
           <em>
             In 1973, Rogers moved to Sarasota, where quite by accident he did
