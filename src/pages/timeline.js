@@ -430,7 +430,7 @@ export default () => {
 
       <figure style={{ "max-width": "600px" }}>
         <Img
-          fixed={images.wiod.childImageSharp.fixed}
+          fluid={images.wiod.childImageSharp.fluid}
           alt={"Neil Rogers at WIOD"}
         />
         <figcaption>Neil Rogers at WIOD</figcaption>
