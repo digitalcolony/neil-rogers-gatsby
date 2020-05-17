@@ -13,8 +13,8 @@ const Header = props => (
       </Link>
       <ul>
         <li>
-          <Link to="/download/" activeStyle={activeStyle}>
-            Download
+          <Link to="/audio/" activeStyle={activeStyle}>
+            Audio
           </Link>
         </li>
         <li>

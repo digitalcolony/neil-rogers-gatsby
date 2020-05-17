@@ -2,7 +2,7 @@ import React from "react"
 import { Helmet } from "react-helmet"
 import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
-import Meta from "../pages/meta"
+import Meta from "./meta"
 import PrimaryLayout from "../layouts/PrimaryLayout"
 
 export default () => {
