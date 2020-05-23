@@ -1,11 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="utf-8" />
+    <title>
+      The Neil Rogers Show - Preserving the Legacy of the Radio Legend
+    </title>
+    <link rel="canonical" href="https://neilrogers.org" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta
+      name="description"
+      href="Audio archives for Miami radio legend Neil Rogers"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="57x57"
+      href="/apple-touch-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="114x114"
+      href="/apple-touch-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="72x72"
+      href="/apple-touch-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="144x144"
+      href="/apple-touch-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="60x60"
+      href="/apple-touch-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="120x120"
+      href="/apple-touch-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="76x76"
+      href="/apple-touch-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="152x152"
+      href="/apple-touch-icon-152x152.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="/favicon-196x196.png"
+      sizes="196x196"
+    />
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="/favicon-128.png" sizes="128x128" />
+    <meta name="application-name" content="&nbsp;" />
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta name="msapplication-TileImage" content="/mstile-144x144.png" />
+    <meta name="msapplication-square70x70logo" content="/mstile-70x70.png" />
+    <meta
+      name="msapplication-square150x150logo"
+      content="/mstile-150x150.png"
+    />
+    <meta name="msapplication-wide310x150logo" content="/mstile-310x150.png" />
+    <meta
+      name="msapplication-square310x310logo"
+      content="/mstile-310x310.png"
+    />
+    <title>
+      Soundboard for Neil Rogers, Jennifer Rehm, Jim Mandich, Larry King and
+      more!
+    </title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/mvp.css" />
+    <link rel="stylesheet" href="sb.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/balloon-css/1.0.4/balloon.min.css"
+    />
   </head>
   <body>
-    <h1>Taco Test</h1>
+    <div>
+      <header>
+        <nav>
+          <a href="/">Home</a>
+          <ul>
+            <li>
+              <a href="/audio/">Audio</a>
+            </li>
+            <li>
+              <a href="/timeline/">Timeline</a>
+            </li>
+            <li>
+              <a href="/docs/">
+                Docs
+              </a>
+            </li>
+            <li>Soundboard</li>
+          </ul>
+        </nav>
+        <h1>Neil Rogers Soundboard</h1>
+        <p>
+          <input
+            type="search"
+            id="filterInput"
+            placeholder="filter drops"
+            autofocus
+          />
+        </p>
+      </header>
+      <main>
+        <div id="soundboard"></div>
+        <script type="text/javascript">
+          var sounds = []
+
+          $.ajax({
+            url: "soundboard.json", // Add link to your JSON file here
+            dataType: "json",
+            type: "get",
+            cache: false,
+            success: function(data) {
+              $(data.files).each(function(index, value) {
+                var thisSound = {
+                  audioName: value.name,
+                  artistName: value.artist,
+                  mp3: value.mp3,
+                }
+                sounds.push(thisSound)
+              })
+            },
+          }).done(function() {
+            sounds.map(file => {
+              $("#soundboard").append(function() {
+                var thisAudio = $("<audio/>").attr({
+                  src: file.mp3,
+                  preload: "none",
+                  onplay: "$(this).siblings('button').css('color', 'yellow');",
+                  onended: "$(this).siblings('button').css('color', 'white');",
+                })
+                var thisButton
+
+                if (file.artistName !== "") {
+                  thisButton = $("<button />")
+                    .addClass("myButton")
+                    .text(file.audioName)
+                    .attr("aria-label", file.artistName)
+                    .attr("data-balloon-pos", "down")
+                } else {
+                  thisButton = $("<button />")
+                    .addClass("myButton")
+                    .text(file.audioName)
+                }
+                return $("<span />")
+                  .addClass("track")
+                  .append(thisAudio)
+                  .append(thisButton)
+              })
+            })
+            $("#soundboard").on("click", "button", function() {
+              $(this)
+                .siblings("audio")
+                .get(0)
+                .play()
+            })
+          })
+        </script>
+      </main>
+      <footer>
+        <small
+          >2012-
+          <script>
+            document.write(new Date().getFullYear())
+          </script>
+          NeilRogers.org is a project maintained by
+          <a href="https://michaelallensmith.com/">Michael Allen Smith</a> with
+          the support of Neil's heir, attorney, and fans.</small
+        >
+      </footer>
+      <script src="filter.js?x=3" defer></script>
+    </div>
   </body>
 </html>
