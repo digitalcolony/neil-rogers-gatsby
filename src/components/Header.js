@@ -27,11 +27,7 @@ const Header = props => (
             Docs
           </Link>
         </li>
-        <li>
-          <Link to="/soundboard/" activeStyle={activeStyle}>
-            Soundboard
-          </Link>
-        </li>
+        <li>Soundboard</li>
       </ul>
     </nav>
     <h1>{props.title}</h1>

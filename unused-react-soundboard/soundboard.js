@@ -1,9 +1,9 @@
 import React from "react"
 import { graphql } from "gatsby"
 import { Helmet } from "react-helmet"
-import Meta from "./meta"
-import PrimaryLayout from "../layouts/PrimaryLayout"
-import Sound from "../components/sound"
+import Meta from "../src/pages/meta"
+import PrimaryLayout from "../src/layouts/PrimaryLayout"
+import Sound from "./sound"
 
 export default ({ data }) => {
   return (
