@@ -81,10 +81,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/mvp.css" />
     <link rel="stylesheet" href="sb.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/balloon-css/1.0.4/balloon.min.css"
-    />
   </head>
   <body>
     <div>
@@ -107,16 +103,25 @@
           </ul>
         </nav>
         <h1>Neil Rogers Soundboard</h1>
-        <p>
+      </header>
+      <main>
+        <div>
           <input
+            class="filter"
             type="search"
             id="filterInput"
             placeholder="filter drops"
             autofocus
           />
-        </p>
-      </header>
-      <main>
+          You can download these drops on
+          <a href="https://archive.org/details/neil-rogers-show-soundboard"
+            >Archive</a
+          >
+          or
+          <a href="https://github.com/NeilRogersRadio/sounds/tree/master/drops"
+            >GitHub</a
+          >.
+        </div>
         <div id="soundboard"></div>
         <script type="text/javascript">
           var sounds = []
@@ -151,8 +156,7 @@
                   thisButton = $("<button />")
                     .addClass("myButton")
                     .text(file.audioName)
-                    .attr("aria-label", file.artistName)
-                    .attr("data-balloon-pos", "down")
+                    .attr("title", file.artistName)
                 } else {
                   thisButton = $("<button />")
                     .addClass("myButton")
@@ -172,6 +176,13 @@
             })
           })
         </script>
+        <p>
+          View the
+          <a href="https://github.com/digitalcolony/Simple-Soundboard"
+            >Simple Soundboard Repo</a
+          >
+          on GitHub.
+        </p>
       </main>
       <footer>
         <small
