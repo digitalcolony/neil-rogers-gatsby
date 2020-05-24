@@ -40,18 +40,18 @@ export default () => {
         archiving other Florida talk shows. Our email is{" "}
         <b>audio@neilrogers.org</b>. Thank you.
       </p>
-
-      <div style={{ "max-width": "750px" }}>
-        <Img
-          fluid={images.neil_mask.childImageSharp.fluid}
-          alt={"Neil Rogers - Radio Legend"}
-        />
-      </div>
       <p>
         To learn more about radio legend Neil Rogers see his page on{" "}
         <a href="https://en.wikipedia.org/wiki/Neil_Rogers">Wikipedia</a> or
         read our <Link to="/timeline/">Timeline</Link>.
       </p>
+      <div style={{ "max-width": "750px", "marginTop": "30px" }}>
+        <Img
+          fluid={images.neil_mask.childImageSharp.fluid}
+          alt={"Neil Rogers - Radio Legend"}
+        />
+      </div>
+      
 
       <h2>Connect and Share</h2>
 

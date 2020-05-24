@@ -91,7 +91,7 @@ export default () => {
         </li>
         <li>Listen to show and take notes.</li>
         <li>
-          Post the show notes either as a comment on the video or email to
+          Post the show notes either as a comment on the video or email them to
           audio@neilrogers.org.
         </li>
         <li>

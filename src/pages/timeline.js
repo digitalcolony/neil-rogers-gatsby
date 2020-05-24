@@ -479,9 +479,9 @@ export default () => {
       </figure>
 
       <p>
-        Neil’s TV show “Neil at Night” began broadcasting on Monday June 8th.
-        The show Neil at Night ran on WAMI Channel 69 from 8:30-9:00 PM and
-        again from 10:30-11:00 PM. It’s last show was on November 4, 1998.{" "}
+        Neil’s TV show “Neil at Night” began broadcasting on Monday June 8th,
+        1998. The show Neil at Night ran on WAMI Channel 69 from 8:30-9:00 PM
+        and again from 10:30-11:00 PM. It’s last show was on November 4, 1998.{" "}
         <em>
           (Source:{" "}
           <a href="https://youtu.be/-Dy78DytGXU">Neil Rogers WAMI video</a>)
