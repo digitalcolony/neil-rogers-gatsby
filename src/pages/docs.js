@@ -8,13 +8,26 @@ export default () => {
     <PrimaryLayout title="Docs">
       <Meta />
       <Helmet>
-        <title>Neil Rogers Blog</title>
+        <title>Neil Rogers Documents</title>
         <meta
           name="description"
           content="News and updates related to the Neil Rogers audio restoration project."
         />
         <link rel="canonical" href="https://neilrogers.org/docs/" />
       </Helmet>
+
+      <h3>Show Data</h3>
+      <p>
+        <a
+          href="https://docs.google.com/spreadsheets/d/1czK9DiOqCK_P8lYS5Im8a_u9IZnKW39lBAuq3FXdmRM/edit?usp=sharing"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Google Spreadsheet
+        </a>{" "}
+        - Our Spreadsheet has data regarding show dates, times when Neil had a
+        guest host, best of show info, timeline dates, and more.
+      </p>
 
       <h3>Tributes</h3>
       <p>
@@ -48,6 +61,26 @@ export default () => {
         </a>
       </p>
 
+      <h3>Other</h3>
+      <p>
+        <b>Cranker's Courier</b> - In the mid 1980s a young man, while still in
+        high school, began sending out a newsletter to various talk hosts. He
+        was one of the most prolific crank callers in the Miami market, and
+        managed to befriend some of the board ops. He was able to get inside
+        information about the talk stations. Neil dubbed him Fruit Cake, and the
+        moniker stuck.{" "}
+        <a href="https://archive.org/details/crankers-courier">Archive</a>,{" "}
+        <a href="https://1drv.ms/u/s!AgQrITkx1J-8pPcHiQJAWd_dwKJKGw?e=GyryKE">
+          OneDrive PDF Folder
+        </a>
+      </p>
+      <p>
+        <a href="https://medium.com/@CriticalMAS/learning-to-spell-with-neil-rogers-neil-rogers-dfe5a600ee72">
+          Learning to Spell With Neil Rogers
+        </a>{" "}
+        - Common spelling mistakes associated with the Neil Rogers Show.
+      </p>
+      <hr />
       <h3>Support</h3>
       <p>
         There are several ways you can support the Neil Rogers Audio Restoration
@@ -134,10 +167,11 @@ export default () => {
         Yahoo! server that the public does not have access to.
       </p>
 
+      <hr />
       <h3>Privacy Policy</h3>
       <p>
-        The 2020 rewrite of NeilRogers.org does not use any cookies or tracking
-        or collect any user data.
+        The 2020 rewrite of NeilRogers.org does not use any cookies or collect
+        any user data.
       </p>
     </PrimaryLayout>
   )
