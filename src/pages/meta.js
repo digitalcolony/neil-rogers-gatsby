@@ -5,9 +5,11 @@ export default () => {
   return (
     <Helmet>
       <meta charSet="utf-8" />
-      <title>The Neil Rogers Show - Preserving the Legacy of the Radio Legend</title>
+      <title>
+        The Neil Rogers Show - Preserving the Legacy of the Radio Legend
+      </title>
       <link rel="canonical" href="https://neilrogers.org" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <meta
         name="description"
         href="Audio archives for Miami radio legend Neil Rogers"
@@ -90,11 +92,15 @@ export default () => {
         name="msapplication-square150x150logo"
         content="/mstile-150x150.png"
       />
-      <meta name="msapplication-wide310x150logo" content="/mstile-310x150.png" />
+      <meta
+        name="msapplication-wide310x150logo"
+        content="/mstile-310x150.png"
+      />
       <meta
         name="msapplication-square310x310logo"
         content="/mstile-310x310.png"
       />
+      <html lang="en" />
     </Helmet>
   )
 }

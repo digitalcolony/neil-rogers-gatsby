@@ -1,3 +1,24 @@
+RewriteEngine On
+## ERRORS ## 
+ErrorDocument 404 /404/
+
+## REDIRECTS ##
+Redirect /download/   /audio/
+Redirect /privacy-policy/ /docs/
+Redirect /sounds/ /audio/
+Redirect /sounds/drops-the-list/ /audio/
+Redirect /sounds/neil-rogers-play-rack/ /audio/
+Redirect /support/ /docs/
+Redirect /thelist/ /audio/
+Redirect /learning-to-spell-with-neil-rogers/ /docs/
+Redirect /miami-herald-covers-the-neil-rogers-audio-recovery-project/ /docs/
+Redirect /interview-with-radio-ink-january-2014/ /docs/
+Redirect /the-crankers-courier-by-fruit-cake-1986-1987/ /docs/
+Redirect /rogers-still-the-talk-of-s-florida-radio-january-5-2014/ /docs/
+Redirect /tribute-john-baker/ /docs/
+Redirect /2016-radio-hall-fame-induction/ /docs/
+Redirect /tribute-to-eric-harold/ /docs/
+
 ## EXPIRES CACHING ##
 <IfModule mod_expires.c>
 ExpiresActive On
@@ -19,20 +40,3 @@ ExpiresByType application/rss+xml "access plus 12 hour"
 ExpiresByType application/atom+xml "access plus 12 hour"
 ExpiresDefault "access 2 days"
 </IfModule>
-
-## REDIRECTS
-Redirect /download/   /audio/
-Redirect /privacy-policy/ /docs/
-Redirect /sounds/ /audio/
-Redirect /sounds/drops-the-list/ /audio/
-Redirect /sounds/neil-rogers-play-rack/ /audio/
-Redirect /support/ /docs/
-Redirect /thelist/ /audio/
-Redirect /learning-to-spell-with-neil-rogers/ /docs/
-Redirect /miami-herald-covers-the-neil-rogers-audio-recovery-project/ /docs/
-Redirect /interview-with-radio-ink-january-2014/ /docs/
-Redirect /the-crankers-courier-by-fruit-cake-1986-1987/ /docs/
-Redirect /rogers-still-the-talk-of-s-florida-radio-january-5-2014/ /docs/
-Redirect /tribute-john-baker/ /docs/
-Redirect /2016-radio-hall-fame-induction/ /docs/
-Redirect /tribute-to-eric-harold/ /docs/

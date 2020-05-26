@@ -1,6 +1,7 @@
 import React from "react"
 import Meta from "../pages/meta"
 import { Link } from "gatsby"
+import { Helmet } from "react-helmet"
 import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
 import PrimaryLayout from "../layouts/PrimaryLayout"
@@ -25,6 +26,16 @@ export default () => {
   return (
     <PrimaryLayout title="The Neil Rogers Show">
       <Meta />
+      <Helmet>
+        <title>
+          The Neil Rogers Show - Preserving the Legacy of the Radio God
+        </title>
+        <meta
+          name="description"
+          content="Welcome to the Neil Rogers audio restoration project."
+        />
+        <link rel="canonical" href="https://neilrogers.org/docs/" />
+      </Helmet>
       <p>
         NeilRogers.org is the work of a collection of fans dedicated to
         preserving the memory of radio’s Neil Rogers. Our primary goal is
@@ -45,13 +56,12 @@ export default () => {
         <a href="https://en.wikipedia.org/wiki/Neil_Rogers">Wikipedia</a> or
         read our <Link to="/timeline/">Timeline</Link>.
       </p>
-      <div style={{ "max-width": "750px", "marginTop": "30px" }}>
+      <div style={{ "max-width": "750px", marginTop: "30px" }}>
         <Img
           fluid={images.neil_mask.childImageSharp.fluid}
           alt={"Neil Rogers - Radio Legend"}
         />
       </div>
-      
 
       <h2>Connect and Share</h2>
 
