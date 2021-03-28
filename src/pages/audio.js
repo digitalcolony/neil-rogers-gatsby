@@ -21,7 +21,7 @@ export default () => {
   `)
 
   return (
-    <PrimaryLayout title="Download, Stream or Torrent Audio">
+    <PrimaryLayout title="📻Download, Stream or Torrent Audio">
       <Meta />
       <Helmet>
         <title>Download Neil Rogers</title>

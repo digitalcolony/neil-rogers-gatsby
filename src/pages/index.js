@@ -24,7 +24,7 @@ export default () => {
     }
   `)
   return (
-    <PrimaryLayout title="The Neil Rogers Show">
+    <PrimaryLayout title="🎙The Neil Rogers Show">
       <Meta />
       <Helmet>
         <title>
@@ -36,6 +36,9 @@ export default () => {
         />
         <link rel="canonical" href="https://neilrogers.org/docs/" />
       </Helmet>
+      <p>
+        If you've found this site after watching the HBO documentary <b>537 Votes</b>, you've come to the right spot.
+      </p>
       <p>
         NeilRogers.org is the work of a collection of fans dedicated to
         preserving the memory of radio’s Neil Rogers. Our primary goal is
@@ -102,22 +105,23 @@ export default () => {
         Check it out on{" "}
         <a href="https://itunes.apple.com/us/podcast/neil-rogers-show/id1231601174">
           iTunes
-        </a>{" "}
-        or directly from the{" "}
+        </a>,{" "}Spotify, or directly from the{" "}
         <a href="http://feeds.feedburner.com/NeilRogersShow">Podcast RSS</a>.{" "}
       </p>
 
       <h2>Friends of Neil</h2>
 
       <ul>
+      <li>
+        <a href="https://soflochannel.com/">SoFloChannel</a> (streaming Neil and Jorge)
+       </li>
+      <li>
+        <a
+          href="https://www.youtube.com/watch?list=PLWLdPbUmHlwEHf-KDM_aCLFQJezAvQ4lX&v=gC5xglFjNdE">
+          Jorge Rodriguez (RIP)</a> (YouTube Playlist)</li>
         <li>
           <a href="https://sites.google.com/site/donbrowne/wiod">
             The Rick {"&"} Suds Show
-          </a>
-        </li>
-        <li>
-          <a href="https://sofloradio.com/the-jorge-rodriguez-show/">
-            Jorge Rodriguez
           </a>
         </li>
         <li>

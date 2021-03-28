@@ -5,7 +5,7 @@ import PrimaryLayout from "../layouts/PrimaryLayout"
 
 export default () => {
   return (
-    <PrimaryLayout title="Docs">
+    <PrimaryLayout title="📄Docs">
       <Meta />
       <Helmet>
         <title>Neil Rogers Documents</title>
@@ -43,6 +43,13 @@ export default () => {
         - John was the greatest Neil historian ever and was essential in helping
         us recover so much of Neil's memory.
       </p>
+      <p>
+      <a
+        href="https://medium.com/@CriticalMAS/tribute-to-jorge-rodriguez-deec8bcc37d8">
+        Tribute to Jorge Rodriguez
+      </a>
+      - Jorge was the longtime producer and guest host for the Neil Rogers Show.
+    </p>
 
       <h3>Media</h3>
       <p>
@@ -170,8 +177,7 @@ export default () => {
       <hr />
       <h3>Privacy Policy</h3>
       <p>
-        The 2020 rewrite of NeilRogers.org does not use any cookies or collect
-        any user data.
+        NeilRogers.org does not use any cookies or collect any user data.
       </p>
     </PrimaryLayout>
   )

@@ -76,7 +76,7 @@
                 INNER JOIN `ineedcof_neil610`.`PodcastRelease` P ON C.ShowDateDate = P.ShowDateDate
                 INNER JOIN `ineedcof_neil610`.`SS_Shows` S ON C.ShowDateDate = S.Date
                 WHERE P.ReleaseTime < Now()
-                ORDER BY ReleaseTime DESC";
+                ORDER BY ReleaseTime DESC LIMIT 500";
 
 
             $result = $conn->query($sql);
