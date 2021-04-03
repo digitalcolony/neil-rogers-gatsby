@@ -1,5 +1,5 @@
 import React from "react"
-import soundStyles from "../components/sound.module.css"
+import soundStyles from "../styles/sound.module.css"
 import nextId from "react-id-generator"
 
 const Sound = props => {

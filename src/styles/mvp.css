@@ -1,4 +1,4 @@
-/* MVP.css v1.6 - https://github.com/andybrewer/mvp */
+/* MVP.css v1.6.3 - https://github.com/andybrewer/mvp */
 
 :root {
   --border-radius: 5px;
@@ -12,8 +12,7 @@
   --color-shadow: #f4f4f4;
   --color-text: #000;
   --color-text-secondary: #999;
-  --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   --hover-brightness: 1.2;
   --justify-important: center;
   --justify-normal: left;
@@ -21,22 +20,22 @@
   --width-card: 285px;
   --width-card-medium: 460px;
   --width-card-wide: 800px;
-  --width-content: 1080px;
+  --width-content: 880px;
 }
 
 /*
 @media (prefers-color-scheme: dark) {
-    :root {
-        --color: #0097fc;
-        --color-accent: #0097fc4f;
-        --color-bg: #333;
-        --color-bg-secondary: #555;
-        --color-secondary: #e20de9;
-        --color-secondary-accent: #e20de94f;
-        --color-shadow: #bbbbbb20;
-        --color-text: #f7f7f7;
-        --color-text-secondary: #aaa;
-    }
+  :root {
+      --color: #0097fc;
+      --color-accent: #0097fc4f;
+      --color-bg: #333;
+      --color-bg-secondary: #555;
+      --color-secondary: #e20de9;
+      --color-secondary-accent: #e20de94f;
+      --color-shadow: #bbbbbb20;
+      --color-text: #f7f7f7;
+      --color-text-secondary: #aaa;
+  }
 }
 */
 
@@ -160,11 +159,23 @@ nav ul li ul {
   box-shadow: var(--box-shadow) var(--color-shadow);
   display: none;
   height: auto;
-  padding: 0.5rem 1rem;
-  position: absolute;
   left: -2px;
+  padding: .5rem 1rem;
+  position: absolute;
   top: 1.7rem;
+  white-space: nowrap;
   width: auto;
+  z-index: 1;
+}
+
+nav ul li ul::before {
+  /* fill gap above to make mousing over them easier */
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -0.5rem;
+  height: 0.5rem;
 }
 
 nav ul li ul li,
@@ -356,8 +367,8 @@ input[type="radio"] {
   display: inline-block;
 }
 
-input[type="checkbox"] + label,
-input[type="radio"] + label {
+input[type="checkbox"]+label,
+input[type="radio"]+label {
   display: inline-block;
   font-weight: normal;
   position: relative;
@@ -430,8 +441,8 @@ table tr:nth-child(even) {
 
 /* Quotes */
 blockquote {
-    display: block;
-  font-size: large;
+  display: block;
+  font-size: x-large;
   line-height: var(--line-height);
   margin: 1rem auto;
   max-width: var(--width-card-medium);
@@ -446,5 +457,3 @@ blockquote footer {
   line-height: var(--line-height);
   padding: 1.5rem 0;
 }
-
-/* Custom styles */
