@@ -7,7 +7,7 @@
             "mp3": "/sounds/1-to-12-hour.mp3"
         },
         {
-            "name": "2 of the Dumbestn",
+            "name": "2 of the Dumbest",
             "artist": "Mike Reineri",
             "duration": "0:07",
             "mp3": "/sounds/2-of-the-Dumbest-White-Men.mp3"
@@ -35,6 +35,12 @@
             "artist": "Fake Ol\u2019 Dirty Bastard",
             "duration": "0:01",
             "mp3": "/sounds/About-30-man.mp3"
+        },
+        {
+            "name": "Absolutely",
+            "artist": "Moe Howard",
+            "duration": "0:01",
+            "mp3": "/sounds/Absolutelyne.mp3"
         },
         {
             "name": "Absolutely Correct Sir",
