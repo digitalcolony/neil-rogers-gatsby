@@ -103,10 +103,6 @@ export default () => {
         of the shows before 1999 are partial. Some are good quality and some
         aren’t. We can date the show and add to the archive.
       </p>
-      <p>
-        Ideally, your audio should be in digital format. Since John Baker passed
-        away, we are no longer set up to convert tapes to digital.
-      </p>
 
       <p>
         Email <b>audio@neilrogers.org</b>. Thank you!
@@ -170,7 +166,7 @@ export default () => {
 
       <p>
         Yahoo! will also have shows from 2000 to May 2002, which we need for our
-        archives. I am absolutely convinced these shows exist somewhere on a
+        archives. I am absolutely convinced these shows exist somewhere on a backup of a 
         Yahoo! server that the public does not have access to.
       </p>
 

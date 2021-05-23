@@ -26,9 +26,7 @@ function FilteredSoundList({sounds }) {
 
   return (
     <div>
-      <p>
-      <input type="text" value={query} onChange={onChange} className={soundboardStyles.filter} placeholder="Search Sounds"/>
-      You can download these drops on <a href="https://archive.org/details/neil-rogers-show-soundboard">Archive</a>{" "}or{" "}<a href="https://github.com/NeilRogersRadio/sounds/tree/master/drops">GitHub</a>.</p>
+      <input type="search" value={query} onChange={onChange} className={soundboardStyles.filter} placeholder="Search Sounds"/>
 
       <div>
         {filteredSounds.map((drop) => (
@@ -56,6 +54,8 @@ export default function Soundboard () {
       </Helmet>
     
      <FilteredSoundList sounds={sounds}/>
+
+     <p> You can download these drops on <a href="https://archive.org/details/neil-rogers-show-soundboard">Archive</a>{" "}or{" "}<a href="https://github.com/NeilRogersRadio/sounds/tree/master/drops">GitHub</a>.</p>
       
     </PrimaryLayout>
   )

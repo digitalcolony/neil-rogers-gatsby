@@ -101,14 +101,16 @@ export default () => {
         <li>SUNDAY: 2008-2009</li>
       </ul>
 
-      <p>
-        Check it out on{" "}
-        <a href="https://itunes.apple.com/us/podcast/neil-rogers-show/id1231601174">
-          iTunes
-        </a>,{" "}Spotify, or directly from the{" "}
-        <a href="http://feeds.feedburner.com/NeilRogersShow">Podcast RSS</a>.{" "}
-      </p>
-
+      <p>Listen to the Neil Rogers Podcast on:</p>
+      <ul>
+        <li><a href="https://open.spotify.com/show/2eQORHonddaXiNLPrVDbH3">Spotify</a></li>
+        <li><a href="https://music.amazon.com/podcasts/299b0ce8-1edf-4a9e-bb16-6c1fa63bfc90/Neil-Rogers-Show?">Amazon Music</a></li>
+        <li><a href="https://itunes.apple.com/us/podcast/neil-rogers-show/id1231601174">iTunes</a></li>
+        <li><a href="https://www.stitcher.com/show/neil-rogers-show">Stitcher</a></li>
+        <li>or directly from our <a href="http://feeds.feedburner.com/NeilRogersShow">Podcast RSS</a></li>
+      </ul>
+      
+     
       <h2>Friends of Neil</h2>
 
       <ul>
