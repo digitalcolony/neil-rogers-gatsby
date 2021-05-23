@@ -4,71 +4,59 @@ import Meta from "./meta"
 import PrimaryLayout from "../layouts/PrimaryLayout"
 import Sound from "../components/Sound"
 import JSONData from "../data/soundboard.json"
+import soundboardStyles from "../styles/soundboard.module.css"
 
+function FilteredSoundList({sounds }) {
+  const [query, setQuery] = useState("");
 
-function compareSounds(a,b) {
-  a = a.name.toLowerCase();
-  b = b.name.toLowerCase();
-
-  return (a < b) ? -1 : (a > b) ? 1 : 0;
-}
-
-
-export default () => {
-  const [sounds, setSounds] = useState(JSONData.files);
-  
-  sounds.sort(compareSounds);
-
-  // sort working
-  // filter NOT working 
-  // look at https://codesandbox.io/s/gracious-dawn-29qi6?file=/src/App.js
-  const [query, setQuery] = useState(''); 
-  const onChange =(event) => setQuery(event.target.value);
-
-  console.log("q", query);
-
- sounds.filter(item => {
-    return (
-      item.name.toLowerCase().includes(query.toLowerCase()) ||
-      item.artist.toLowerCase().includes(query.toLowerCase())
-    );
+  sounds.sort((a, b) => {
+    if (a.name < b.name) return -1;
+    if (a.name > b.name) return 1;
+    return 0;
   });
 
+  const onChange = (event) => setQuery(event.target.value);
 
-  
+  const filteredSounds = sounds.filter(item => {
+      return (
+        item.name.toLowerCase().includes(query.toLowerCase()) ||
+        item.artist.toLowerCase().includes(query.toLowerCase())
+      );
+  });
+
   return (
-   
+    <div>
+      <p>
+      <input type="text" value={query} onChange={onChange} className={soundboardStyles.filter} placeholder="Search Sounds"/>
+      You can download these drops on <a href="https://archive.org/details/neil-rogers-show-soundboard">Archive</a>{" "}or{" "}<a href="https://github.com/NeilRogersRadio/sounds/tree/master/drops">GitHub</a>.</p>
 
+      <div>
+        {filteredSounds.map((drop) => (
+              <Sound src={drop.mp3} name={drop.name} artist={drop.artist} key={drop.mp3} />
+            ))}
+      </div>
+    </div>
+  )    
+}
+
+export default function Soundboard () {
+  const sounds = JSONData.files;
+
+  return (
+  
     <PrimaryLayout title="🔊The Neil Rogers Soundboard">
       <Meta />
       <Helmet>
-        <title>Neil Rogers Soundboard</title>
+        <title>The Neil Rogers Soundboard - Play drops from Neil, Jim Mandich, Larry King, and More!</title>
         <meta
           name="description"
           content="Soundboard for Neil Rogers, Jennifer Rehm, Jim Mandich, Larry King and more!"
         />
         <link rel="canonical" href="https://neilrogers.org/soundboard/" />
-        
       </Helmet>
-
-      <p>You can download these drops on <a href="https://archive.org/details/neil-rogers-show-soundboard">Archive</a>{" "}or{" "}<a href="https://github.com/NeilRogersRadio/sounds/tree/master/drops">GitHub</a>.</p>
-     
-      <input 
-        type="text" 
-        placeholder="Enter item to be searched" 
-        value={ query } 
-        onChange={onChange} />
-  
-
-        <div>
-          {
-          sounds.map((drop) => (
-            <Sound src={drop.mp3} name={drop.name} artist={drop.artist} key={drop.mp3} />
-          ))}
-        </div>
+    
+     <FilteredSoundList sounds={sounds}/>
       
     </PrimaryLayout>
   )
 }
-
-

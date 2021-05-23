@@ -8,7 +8,7 @@ export default () => {
     <PrimaryLayout title="📄Docs">
       <Meta />
       <Helmet>
-        <title>Neil Rogers Documents</title>
+        <title>Neil Rogers Documents - Tributes, Media, and Show Info</title>
         <meta
           name="description"
           content="News and updates related to the Neil Rogers audio restoration project."
@@ -16,7 +16,7 @@ export default () => {
         <link rel="canonical" href="https://neilrogers.org/docs/" />
       </Helmet>
 
-      <h3>Show Data</h3>
+      <h3>Show Info</h3>
       <p>
         <a
           href="https://docs.google.com/spreadsheets/d/1czK9DiOqCK_P8lYS5Im8a_u9IZnKW39lBAuq3FXdmRM/edit?usp=sharing"

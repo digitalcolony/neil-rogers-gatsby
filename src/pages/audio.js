@@ -24,7 +24,7 @@ export default () => {
     <PrimaryLayout title="📻Download, Stream or Torrent Audio">
       <Meta />
       <Helmet>
-        <title>Download Neil Rogers</title>
+        <title>Download The Neil Rogers Show</title>
         <meta
           name="description"
           content="Download audio for the radio god Neil Rogers."

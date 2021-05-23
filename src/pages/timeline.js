@@ -177,7 +177,7 @@ export default () => {
     <PrimaryLayout title="⌚Neil Rogers Timeline">
       <Meta />
       <Helmet>
-        <title>Neil Rogers Timeline</title>
+        <title>Neil Rogers Timeline - The History of the Radio God</title>
         <meta
           name="description"
           content="A brief history of radio's Neil Rogers."
