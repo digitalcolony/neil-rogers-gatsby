@@ -13,6 +13,7 @@ nav {
   }
 
   /* clearfix */
+
   ul::after {
     content: "";
     display: block;
@@ -40,5 +41,4 @@ nav {
   nav a:hover {
     text-decoration: none;
     color: navy;
-  }
- 
+  }  

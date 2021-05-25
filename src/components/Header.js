@@ -8,7 +8,7 @@ const activeStyle = {
 
 const Header = props => (
   <header>
-    <nav> 
+    <nav className={navStyles.nav}> 
       <Link to="/" activeStyle={activeStyle}>
         Home
       </Link>

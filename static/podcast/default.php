@@ -22,11 +22,10 @@
     // === iTunes-specific feed options
 
     $feed_author = "NeilRogers.org";
-    $feed_email = "audio@neilrogers.org  (NeilRogers.org)";
-    // TODO REPLACE: 1400x1400 min, 3000x3000 max JPG or PNG
-    $feed_image = "http://neilrogers.org/wp-content/uploads/2017/04/neil-rogers1400.jpg";
+    $feed_email = "audio@neilrogers.org";
+    $feed_image = "https://neilrogers.org/images/neil-rogers1400.jpg";
     $feed_explicit = "yes";
-    // TODO: Can not figure out how to validate catgeories with ampersands
+    // TODO: Can not figure out how to validate categories with ampersands
     $feed_category = "Comedy";    
     $feed_subcategory = "Food";
 
@@ -71,12 +70,12 @@
 	        include("connect.php");
 
             // query for X number of podcasts
-            $sql = "SELECT C.Title, C.Duration, C.mp3url, C.ShowDateDate, C.FileSize, S.Notes, P.ReleaseTime 
+            $sql = "SELECT C.Title, C.Duration, C.mp3url, C.ShowDateDate, C.FileSize, S.Notes, P.ReleaseTime, S.uuid 
                 FROM ineedcof_neil610.clyp C
                 INNER JOIN `ineedcof_neil610`.`PodcastRelease` P ON C.ShowDateDate = P.ShowDateDate
                 INNER JOIN `ineedcof_neil610`.`SS_Shows` S ON C.ShowDateDate = S.Date
                 WHERE P.ReleaseTime < Now()
-                ORDER BY ReleaseTime DESC LIMIT 500";
+                ORDER BY ReleaseTime DESC LIMIT 300";
 
 
             $result = $conn->query($sql);
@@ -90,6 +89,8 @@
                     $file_description = htmlentities($row["Notes"]);                                      
                     $pub_date = date("r", strtotime($row["ReleaseTime"])); // "Mon, 24 Apr 2017 12:34:00 EDT"
                     $file_size = $row["FileSize"];
+
+                    $guid = $row["uuid"];
                                                  
         ?>
 
@@ -104,7 +105,7 @@
                         </description>
                         <enclosure url="<?php echo $file_url; ?>" length="<?php echo $file_size; ?>" type="audio/mpeg"/>                        
                         <guid>
-                            <?php echo $file_url; ?>
+                            <?php echo $guid; ?>
                         </guid>
                         <itunes:duration><?php echo $file_duration; ?></itunes:duration>
                         <itunes:summary><![CDATA[
