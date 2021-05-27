@@ -42,14 +42,4 @@ nav {
     text-decoration: none;
     color: navy;
   }  
-
-  @font-face {
-    font-family: 'ImpactLabel';
-    src: local('ImpactLabel'), url(../fonts/ImpactLabel.ttf) format('truetype');
-}
-
-  h1 {
-    font-family: ImpactLabel, serif;
-    font-size: 2.5rem;
-    font-weight: bold;
-  }
+ 
