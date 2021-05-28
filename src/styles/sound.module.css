@@ -44,7 +44,7 @@
   background: -ms-linear-gradient(top, #476e9e 5%, #7892c2 100%);
   background: linear-gradient(to bottom, #476e9e 5%, #7892c2 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#476e9e', endColorstr='#7892c2',GradientType=0);
-  background-color: #476e9e;
+  color: yellow;
 }
 .myButton:active {
   position: relative;
