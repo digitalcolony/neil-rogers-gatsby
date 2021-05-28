@@ -1961,6 +1961,12 @@
             "artist": "Jim Mandich",
             "duration": "0:02",
             "mp3": "/sounds/SOB-Huge.mp3"
+        },
+        {
+            "name": "Oyster",
+            "artist": "Jim Mandich",
+            "duration": "0:02",
+            "mp3": "/sounds/suck-oyster.mp3"
         }
     ]
 }

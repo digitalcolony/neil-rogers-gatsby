@@ -8,7 +8,7 @@ module.exports = {
   /* Your site config here */
   siteMetadata: {
     title: "Neil Rogers",
-    siteUrl: "https://neil-rogers.netlify.app/",
+    siteUrl: "https://neilrogers.org/",
   },
   plugins: [
     "gatsby-plugin-sitemap",
