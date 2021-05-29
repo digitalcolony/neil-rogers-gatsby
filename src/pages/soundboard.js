@@ -27,7 +27,7 @@ function FilteredSoundList({sounds }) {
   return (
     <div>
       <input type="search" value={query} onChange={onChange} className={soundboardStyles.filter} placeholder="Search Sounds"/>
-
+      
       <div>
         {filteredSounds.map((drop) => (
               <Sound src={drop.mp3} name={drop.name} artist={drop.artist} key={drop.mp3} />
