@@ -1,8 +1,6 @@
 [build]
-command = 'npm run build'
 functions = 'functions'
-publish = 'src'
 [[redirects]]
 from = "/podcast/"
-to = "/.netlify/functions/podcastFeed/"
+to = "/.netlify/functions/podcast/"
 status = 200
