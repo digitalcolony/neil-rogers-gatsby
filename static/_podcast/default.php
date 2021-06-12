@@ -1,4 +1,5 @@
 <?php
+    header("Access-Control-Allow-Origin: *");
     header('Content-Type: application/xml; charset=utf-8');
 
     // === Generic feed options

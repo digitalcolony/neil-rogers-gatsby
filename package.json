@@ -8,6 +8,7 @@
     "build": "gatsby build",
     "develop": "gatsby develop",
     "dev-m": "gatsby develop -H 0.0.0.0 -p 8000",
+    "dev": "netlify-dev",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
@@ -33,6 +34,7 @@
     "react-id-generator": "^3.0.1"
   },
   "devDependencies": {
+    "netlify-cli": "^3.37.16",
     "prettier": "^1.19.1"
   },
   "repository": {

@@ -27,7 +27,7 @@ function FilteredSoundList({sounds }) {
   return (
     <div>
       <input type="search" value={query} onChange={onChange} className={soundboardStyles.filter} placeholder="Search Sounds"/>
-      
+      <p>There are issues with the hosted Soundboard. Visit the <a href="https://neil-rogers.netlify.app/soundboard/">Netlify version</a> of this page for now.</p>
       <div>
         {filteredSounds.map((drop) => (
               <Sound src={drop.mp3} name={drop.name} artist={drop.artist} key={drop.mp3} />
