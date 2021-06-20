@@ -50,9 +50,14 @@ const addShowsToFeed = (data) => {
                     title: show.Title,
                     description: show.Notes,
                     url: show.mp3url, // link to the item
-                    guid: show.uuid, // optional - defaults to url
+                    //guid: show.uuid, // optional - defaults to url
                     author: 'NeilRogers.org', // optional - defaults to feed author property
                     date: show.ReleaseTime, // any format that js Date can parse.
+                    enclosure: {
+                      url: show.mp3url,
+                      size: show.FileSize,
+                      type: "audio/mpeg"
+                    },
                     itunesAuthor: 'NeilRogers.org',
                     itunesExplicit: true,
                     itunesSubtitle: 'Neil God!',
