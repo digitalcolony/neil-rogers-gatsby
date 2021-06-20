@@ -24,7 +24,7 @@
 
     $feed_author = "NeilRogers.org";
     $feed_email = "audio@neilrogers.org";
-    $feed_image = "https://neilrogers.org/images/neil-rogers1400.jpg";
+    $feed_image = "https://neilrogers.org/neil-rogers1400.jpg";
     $feed_explicit = "yes";
     // TODO: Can not figure out how to validate categories with ampersands
     $feed_category = "Comedy";    
