@@ -44,7 +44,7 @@ const addShowsToFeed = (data) => {
         let releaseDate = new Date(show.ReleaseTime);
         if(releaseDate < today ) {
             i++;
-            if(i <=300) {
+            if(i <=200) {
                /* loop over data and add to feed */
                 feed.addItem({
                     title: show.Title,
