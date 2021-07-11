@@ -24,9 +24,7 @@ export default () => {
     <PrimaryLayout title="👂🏽 Podcast">
       <Meta />
       <Helmet>
-        <title>
-          Neil Rogers Documents - Listen to the Neil Rogers Show Podcast
-        </title>
+        <title>Neil Rogers - Listen to the Neil Rogers Show Podcast</title>
         <meta
           name="description"
           content="Listen to the Neil Rogers Show Podcast"
@@ -35,8 +33,9 @@ export default () => {
       </Helmet>
 
       <p>
-        The Neil Rogers Show is available as a daily podcast. A show is
-        released each morning. All the shows can also be downloaded directly from the resources on our <Link to="/audio/">Audio</Link> page. 
+        The Neil Rogers Show is available as a daily podcast. A show is released
+        each morning. All the shows can also be downloaded directly from the
+        resources on our <Link to="/audio/">Audio</Link> page.
       </p>
 
       <h3>Listen to the Neil Rogers Podcast on:</h3>
@@ -67,7 +66,10 @@ export default () => {
           <a href="http://feeds.feedburner.com/NeilRogersShow">Podcast RSS</a>
         </li>
       </ul>
-      <p>If your podcast provider does not have the Neil Rogers Show, email <b>audio@neilrogers.org</b> and we'll work to add it.</p>
+      <p>
+        If your podcast provider does not have the Neil Rogers Show, email{" "}
+        <b>audio@neilrogers.org</b> and we'll work to add it.
+      </p>
 
       <h3>Podcast Schedule</h3>
       <ul className="schedule">
