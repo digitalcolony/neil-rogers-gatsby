@@ -54,6 +54,11 @@ export default () => {
           </a>
         </li>
         <li>
+          <a href="https://podcasts.google.com/feed/aHR0cDovL2ZlZWRzLmZlZWRidXJuZXIuY29tL05laWxSb2dlcnNTaG93">
+            Google
+          </a>
+        </li>
+        <li>
           <a href="https://open.spotify.com/show/2eQORHonddaXiNLPrVDbH3">
             Spotify
           </a>
