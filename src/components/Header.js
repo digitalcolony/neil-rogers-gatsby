@@ -14,7 +14,7 @@ const Header = props => (
       </Link>
       <ul>
         <li>
-          <Link to="/listen" activeStyle={activeStyle}>
+          <Link to="/listen/" activeStyle={activeStyle}>
             Podcast
           </Link>
         </li>
