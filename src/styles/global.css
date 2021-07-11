@@ -15,5 +15,19 @@ footer {
 section {
   max-width: 100ch;
   margin: auto;
-  
+}
+
+ul.schedule {
+  columns: 2;
+  list-style-type: none; /* Remove bullets */
+  padding: 3; /* Remove padding */
+  margin: 0; /* Remove margins */
+  background-color: white;
+  border: 1px dashed black;
+}
+
+@media screen and (max-width: 500px) {
+  ul.schedule {
+    columns: 1;
+  }
 }

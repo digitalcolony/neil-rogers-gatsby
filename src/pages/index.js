@@ -80,29 +80,7 @@ export default () => {
         </li>
       </ul>
 
-      <h2>The Neil Rogers Show Podcast</h2>
-
-      <p>The Neil Rogers Show is available as a daily podcast.</p>
-      <ul>
-        <li>MONDAY: 1986-1989</li>
-        <li>TUESDAY: 1990-1997</li>
-        <li>WEDNESDAY: 1998-2001</li>
-        <li>THURSDAY: 2002-2003</li>
-        <li>FRIDAY: 2004-2005</li>
-        <li>SATURDAY: 2006-2007</li>
-        <li>SUNDAY: 2008-2009</li>
-      </ul>
-
-      <p>Listen to the Neil Rogers Podcast on:</p>
-      <ul> 
-        <li><a href="https://music.amazon.com/podcasts/299b0ce8-1edf-4a9e-bb16-6c1fa63bfc90/Neil-Rogers-Show?">Amazon Music</a></li>
-        <li><a href="https://itunes.apple.com/us/podcast/neil-rogers-show/id1231601174">iTunes</a></li>
-        <li><a href="https://open.spotify.com/show/2eQORHonddaXiNLPrVDbH3">Spotify</a></li>   
-        <li><a href="https://www.stitcher.com/show/neil-rogers-show">Stitcher</a></li>
-        <li>or directly from our <a href="http://feeds.feedburner.com/NeilRogersShow">Podcast RSS</a></li>
-      </ul>
       
-     
       <h2>Friends of Neil</h2>
 
       <ul>

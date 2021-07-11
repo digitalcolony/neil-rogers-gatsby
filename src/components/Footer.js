@@ -20,7 +20,7 @@ const Footer = props => (
   </p>
   <p>
     <i>
-      This site does not track users or display ads. It is a hobby site made in the spirit of the early web.
+      This site does not track users or display ads. No pop-up windows either. It is a hobby site made in the spirit of the early web.
     </i>
   </p>
   </footer>
