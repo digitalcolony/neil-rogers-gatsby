@@ -5,7 +5,7 @@ import Img from "gatsby-image"
 import Meta from "./meta"
 import PrimaryLayout from "../layouts/PrimaryLayout"
 
-export default () => {
+const Audio = () => {
   const images = useStaticQuery(graphql`
     query {
       pope: file(relativePath: { eq: "images/pope.jpg" }) {
@@ -175,3 +175,5 @@ export default () => {
     </PrimaryLayout>
   )
 }
+
+export default Audio;

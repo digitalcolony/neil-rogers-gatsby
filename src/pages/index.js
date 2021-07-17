@@ -1,12 +1,11 @@
 import React from "react"
 import Meta from "../pages/meta"
-import { Link } from "gatsby"
 import { Helmet } from "react-helmet"
-import { graphql, useStaticQuery } from "gatsby"
+import { graphql, useStaticQuery, Link } from "gatsby"
 import Img from "gatsby-image"
 import PrimaryLayout from "../layouts/PrimaryLayout"
 
-export default () => {
+const Index = () => {
   const images = useStaticQuery(graphql`
     query {
       neil_mask: file(relativePath: { eq: "images/neil-mask-radio.jpg" }) {
@@ -37,7 +36,8 @@ export default () => {
         <link rel="canonical" href="https://neilrogers.org/docs/" />
       </Helmet>
       <p>
-        If you've found this site after watching the HBO documentary <b>537 Votes</b>, you've come to the right spot.
+        If you've found this site after watching the HBO documentary{" "}
+        <b>537 Votes</b>, you've come to the right spot.
       </p>
       <p>
         NeilRogers.org is the work of a collection of fans dedicated to
@@ -80,17 +80,19 @@ export default () => {
         </li>
       </ul>
 
-      
       <h2>Friends of Neil</h2>
 
       <ul>
-      <li>
-        <a href="https://soflochannel.com/">SoFloChannel</a> (streaming Neil and Jorge)
-       </li>
-      <li>
-        <a
-          href="https://www.youtube.com/watch?list=PLWLdPbUmHlwEHf-KDM_aCLFQJezAvQ4lX&v=gC5xglFjNdE">
-          Jorge Rodriguez (RIP)</a> (YouTube Playlist)</li>
+        <li>
+          <a href="https://soflochannel.com/">SoFloChannel</a> (streaming Neil
+          and Jorge)
+        </li>
+        <li>
+          <a href="https://www.youtube.com/watch?list=PLWLdPbUmHlwEHf-KDM_aCLFQJezAvQ4lX&v=gC5xglFjNdE">
+            Jorge Rodriguez (RIP)
+          </a>{" "}
+          (YouTube Playlist)
+        </li>
         <li>
           <a href="https://sites.google.com/site/donbrowne/wiod">
             The Rick {"&"} Suds Show
@@ -129,3 +131,5 @@ export default () => {
     </PrimaryLayout>
   )
 }
+
+export default Index

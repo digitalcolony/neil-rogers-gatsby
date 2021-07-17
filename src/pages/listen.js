@@ -5,7 +5,7 @@ import Img from "gatsby-image"
 import Meta from "./meta"
 import PrimaryLayout from "../layouts/PrimaryLayout"
 
-export default () => {
+const Listen = () => {
   const images = useStaticQuery(graphql`
     query {
       neil: file(relativePath: { eq: "images/neil-rogers-show.jpg" }) {
@@ -103,3 +103,5 @@ export default () => {
     </PrimaryLayout>
   )
 }
+
+export default Listen

@@ -6,7 +6,7 @@ import { Link } from "gatsby"
 import Meta from "../pages/meta"
 import PrimaryLayout from "../layouts/PrimaryLayout"
 
-export default () => {
+const Four04 = () => {
   const images = useStaticQuery(graphql`
     query {
       sigh: file(relativePath: { eq: "images/neil-sigh.jpg" }) {
@@ -28,7 +28,10 @@ export default () => {
         <meta name="robots" content="noindex,nofollow" />
       </Helmet>
 
-      <p>The page you are looking for does not exist. Return to the <Link to="/">Home Page</Link>.</p>
+      <p>
+        The page you are looking for does not exist. Return to the{" "}
+        <Link to="/">Home Page</Link>.
+      </p>
 
       <figure
         style={{
@@ -43,3 +46,5 @@ export default () => {
     </PrimaryLayout>
   )
 }
+
+export default Four04

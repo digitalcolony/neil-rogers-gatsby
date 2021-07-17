@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-import navStyles from "../styles/nav.module.css"
+import * as navStyles from "../styles/nav.module.css"
 
 const activeStyle = {
   color: "black",
@@ -8,7 +8,7 @@ const activeStyle = {
 
 const Header = props => (
   <header>
-    <nav className={navStyles.nav}> 
+    <nav className={navStyles}>
       <Link to="/" activeStyle={activeStyle}>
         Home
       </Link>

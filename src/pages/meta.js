@@ -1,7 +1,7 @@
 import React from "react"
 import { Helmet } from "react-helmet"
 
-export default () => {
+const Meta = () => {
   return (
     <Helmet>
       <meta charSet="utf-8" />
@@ -104,3 +104,5 @@ export default () => {
     </Helmet>
   )
 }
+
+export default Meta

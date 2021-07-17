@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet"
 import Meta from "./meta"
 import PrimaryLayout from "../layouts/PrimaryLayout"
 
-export default () => {
+const Docs = () => {
   return (
     <PrimaryLayout title="📄Docs">
       <Meta />
@@ -44,12 +44,12 @@ export default () => {
         us recover so much of Neil's memory.
       </p>
       <p>
-      <a
-        href="https://medium.com/@CriticalMAS/tribute-to-jorge-rodriguez-deec8bcc37d8">
-        Tribute to Jorge Rodriguez
-      </a>
-      - Jorge was the longtime producer and guest host for the Neil Rogers Show.
-    </p>
+        <a href="https://medium.com/@CriticalMAS/tribute-to-jorge-rodriguez-deec8bcc37d8">
+          Tribute to Jorge Rodriguez
+        </a>
+        - Jorge was the longtime producer and guest host for the Neil Rogers
+        Show.
+      </p>
 
       <h3>Media</h3>
       <p>
@@ -166,15 +166,15 @@ export default () => {
 
       <p>
         Yahoo! will also have shows from 2000 to May 2002, which we need for our
-        archives. I am absolutely convinced these shows exist somewhere on a backup of a 
-        Yahoo! server that the public does not have access to.
+        archives. I am absolutely convinced these shows exist somewhere on a
+        backup of a Yahoo! server that the public does not have access to.
       </p>
 
       <hr />
       <h3>Privacy Policy</h3>
-      <p>
-        NeilRogers.org does not use any cookies or collect any user data.
-      </p>
+      <p>NeilRogers.org does not use any cookies or collect any user data.</p>
     </PrimaryLayout>
   )
 }
+
+export default Docs

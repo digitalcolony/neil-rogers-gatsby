@@ -1,11 +1,10 @@
 import React from "react"
-import soundStyles from "../styles/sound.module.css"
+import * as soundStyles from "../styles/sound.module.css"
 import nextId from "react-id-generator"
 
 function playSound(mp3) {
-  const sound = new Audio(mp3);  
-  sound.play();
-
+  const sound = new Audio(mp3)
+  sound.play()
 }
 
 const Sound = props => {
@@ -15,7 +14,6 @@ const Sound = props => {
 
   return (
     <span className="track">
-     
       <button
         id={buttonId}
         className={soundStyles.myButton}
