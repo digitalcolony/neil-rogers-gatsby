@@ -17,9 +17,15 @@ const Meta = () => {
       <meta property="og:site_name" content="The Neil Rogers Show" />
       <meta property="og:type" content="website" />
       <meta property="og:title" content="The Neil Rogers Show" />
-      <meta property="og:description" content="Audio archives for Miami radio legend Neil Rogers" />
+      <meta
+        property="og:description"
+        content="Audio archives for Miami radio legend Neil Rogers"
+      />
       <meta property="og:url" content="https://neilrogers.org" />
-      <meta property="og:image" content="https://neilrogers.org/neil-studio1200x600.jpg" />
+      <meta
+        property="og:image"
+        content="https://neilrogers.org/neil-studio1200x630.jpg"
+      />
       <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="630" />
       <link
