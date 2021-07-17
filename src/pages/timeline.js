@@ -183,6 +183,11 @@ const Timeline = () => {
           content="A brief history of radio's Neil Rogers."
         />
         <link rel="canonical" href="https://neilrogers.org/timeline/" />
+        <meta
+          property="og:description"
+          content="A brief history of radio's Neil Rogers."
+        />
+        <meta property="og:url" content="https://neilrogers.org/timeline/" />
       </Helmet>
       <p>This is a brief history of radio legend Neil Rogers.</p>
       <h3>Childhood</h3>

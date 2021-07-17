@@ -30,6 +30,11 @@ const Listen = () => {
           content="Listen to the Neil Rogers Show Podcast"
         />
         <link rel="canonical" href="https://neilrogers.org/listen/" />
+        <meta
+          property="og:description"
+          content="Listen to the Neil Rogers Show Podcast"
+        />
+        <meta property="og:url" content="https://neilrogers.org/listen/" />
       </Helmet>
 
       <p>

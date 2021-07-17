@@ -14,6 +14,11 @@ const Docs = () => {
           content="News and updates related to the Neil Rogers audio restoration project."
         />
         <link rel="canonical" href="https://neilrogers.org/docs/" />
+        <meta
+          property="og:description"
+          content="News and updates related to the Neil Rogers audio restoration project."
+        />
+        <meta property="og:url" content="https://neilrogers.org/docs/" />
       </Helmet>
 
       <h3>Show Info</h3>

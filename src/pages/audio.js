@@ -30,6 +30,12 @@ const Audio = () => {
           content="Download audio for the radio god Neil Rogers."
         />
         <link rel="canonical" href="https://neilrogers.org/download/" />
+        <meta property="og:title" content="Download The Neil Rogers Show" />
+        <meta
+          property="og:description"
+          content="Download audio for the radio god Neil Rogers."
+        />
+        <meta property="og:url" content="https://neilrogers.org" />
       </Helmet>
 
       <section>
@@ -128,7 +134,13 @@ const Audio = () => {
           </p>
         </aside>
       </section>
-      <figure style={{ "max-width": "670px", "marginLeft": "auto", "marginRight": "auto" }}>
+      <figure
+        style={{
+          "max-width": "670px",
+          marginLeft: "auto",
+          marginRight: "auto",
+        }}
+      >
         <Img
           fluid={images.pope.childImageSharp.fluid}
           alt={"Neil Rogers as Pope"}
@@ -176,4 +188,4 @@ const Audio = () => {
   )
 }
 
-export default Audio;
+export default Audio

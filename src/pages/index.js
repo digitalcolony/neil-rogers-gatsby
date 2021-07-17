@@ -33,7 +33,12 @@ const Index = () => {
           name="description"
           content="Welcome to the Neil Rogers audio restoration project."
         />
-        <link rel="canonical" href="https://neilrogers.org/docs/" />
+        <link rel="canonical" href="https://neilrogers.org/" />
+        <meta
+          property="og:description"
+          content="Welcome to the Neil Rogers audio restoration project."
+        />
+        <meta property="og:url" content="https://neilrogers.org" />
       </Helmet>
       <p>
         If you've found this site after watching the HBO documentary{" "}

@@ -15,9 +15,9 @@ function FilteredSoundList({ sounds }) {
     return 0
   })
 
-  const onChange = event => setQuery(event.target.value)
+  const onChange = (event) => setQuery(event.target.value)
 
-  const filteredSounds = sounds.filter(item => {
+  const filteredSounds = sounds.filter((item) => {
     return (
       item.name.toLowerCase().includes(query.toLowerCase()) ||
       item.artist.toLowerCase().includes(query.toLowerCase())
@@ -34,7 +34,7 @@ function FilteredSoundList({ sounds }) {
         placeholder="Search Sounds"
       />
       <div>
-        {filteredSounds.map(drop => (
+        {filteredSounds.map((drop) => (
           <Sound
             src={drop.mp3}
             name={drop.name}
@@ -63,6 +63,11 @@ const Soundboard = () => {
           content="Soundboard for Neil Rogers, Jennifer Rehm, Jim Mandich, Larry King and more!"
         />
         <link rel="canonical" href="https://neilrogers.org/soundboard/" />
+        <meta
+          property="og:description"
+          content="Soundboard for Neil Rogers, Jennifer Rehm, Jim Mandich, Larry King and more!"
+        />
+        <meta property="og:url" content="https://neilrogers.org/soundboard/" />
       </Helmet>
 
       <FilteredSoundList sounds={sounds} />
