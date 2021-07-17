@@ -49,15 +49,15 @@ const Listen = () => {
           <a href="https://anchor.fm/neil-rogers-show">AnchorFM</a>
         </li>
         <li>
-          <a href="https://itunes.apple.com/us/podcast/neil-rogers-show/id1231601174">
-            iTunes
-          </a>
-        </li>
-        <li>
           <a href="https://podcasts.google.com/feed/aHR0cDovL2ZlZWRzLmZlZWRidXJuZXIuY29tL05laWxSb2dlcnNTaG93">
             Google
           </a>
         </li>
+        <li>
+          <a href="https://itunes.apple.com/us/podcast/neil-rogers-show/id1231601174">
+            iTunes
+          </a>
+        </li> 
         <li>
           <a href="https://open.spotify.com/show/2eQORHonddaXiNLPrVDbH3">
             Spotify
