@@ -83,6 +83,12 @@ const Index = () => {
         <li>
           <a href="https://www.flickr.com/photos/neilrogersradio">Flickr</a>
         </li>
+        <li>
+          <a href="https://www.flickr.com/photos/133613327@N06/">Flickr</a> (by Neil Rogers History)
+        </li>
+        <li>
+          <a href="https://www.instagram.com/neilrogersradio/">Instagram</a>
+        </li>
       </ul>
 
       <h2>Friends of Neil</h2>
