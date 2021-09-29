@@ -51,7 +51,7 @@ const Docs = () => {
       <p>
         <a href="https://medium.com/@CriticalMAS/tribute-to-jorge-rodriguez-deec8bcc37d8">
           Tribute to Jorge Rodriguez
-        </a>
+        </a>{" "}
         - Jorge was the longtime producer and guest host for the Neil Rogers
         Show.
       </p>
@@ -77,7 +77,7 @@ const Docs = () => {
       <p>
         <a href="https://github.com/NeilRogersRadio/radio-stories">
           Radio Stories
-        </a>
+        </a>{" "}
         - Radio stories from WIOD.
       </p>
       <p>
