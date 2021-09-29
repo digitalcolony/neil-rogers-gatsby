@@ -76,8 +76,9 @@ const Docs = () => {
       <h3>Other</h3>
       <p>
         <a href="https://github.com/NeilRogersRadio/radio-stories">
-          <b>Radio Stories</b> - Radio stories from WIOD. 
+          <b>Radio Stories</b> - Radio stories from WIOD.
         </a>
+      </p>
       <p>
         <b>Cranker's Courier</b> - In the mid 1980s a young man, while still in
         high school, began sending out a newsletter to various talk hosts. He
