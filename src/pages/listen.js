@@ -62,7 +62,7 @@ const Listen = () => {
           <a href="https://itunes.apple.com/us/podcast/neil-rogers-show/id1231601174">
             iTunes
           </a>
-        </li> 
+        </li>
         <li>
           <a href="https://open.spotify.com/show/2eQORHonddaXiNLPrVDbH3">
             Spotify
@@ -78,7 +78,8 @@ const Listen = () => {
       </ul>
       <p>
         If your podcast provider does not have the Neil Rogers Show, email{" "}
-        <b>audio@neilrogers.org</b> and we'll work to add it.
+        <b>audio@neilrogers.org</b> and we'll work to add it. The Neil Rogers
+        Show podcast is a hobby not a business. We are not accepting sponsors.
       </p>
 
       <h3>Podcast Schedule</h3>
