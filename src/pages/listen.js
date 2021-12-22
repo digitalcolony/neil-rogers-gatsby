@@ -38,9 +38,18 @@ const Listen = () => {
       </Helmet>
 
       <p>
-        The Neil Rogers Show is available as a daily podcast. A show is released
-        each morning. All the shows can also be downloaded directly from the
-        resources on our <Link to="/audio/">Audio</Link> page.
+        <b>The Neil Rogers Show</b> is available as a daily podcast. A show is
+        released each morning. All the shows can also be downloaded directly
+        from the resources on our <Link to="/audio/">Audio</Link> page.
+      </p>
+      <p>
+        We also have a second podcast titled <b>South Florida Radio Archives</b>
+        . It will highlight shows from other talk icons such as Rick & Suds, Bob
+        Lassiter, Stan Major, and others. We will also publish requests for Neil
+        Rogers. If you have a request, send an email to{" "}
+        <b>audio@neilrogers.org</b> or connect with{" "}
+        <a href="https://twitter.com/NeilRogersRadio/">@NeilRogersRadio</a> on
+        Twitter.{" "}
       </p>
 
       <h3>Listen to the Neil Rogers Podcast on:</h3>
@@ -76,13 +85,8 @@ const Listen = () => {
           <a href="http://feeds.feedburner.com/NeilRogersShow">Podcast RSS</a>
         </li>
       </ul>
-      <p>
-        If your podcast provider does not have the Neil Rogers Show, email{" "}
-        <b>audio@neilrogers.org</b> and we'll work to add it. The Neil Rogers
-        Show podcast is a hobby not a business. We are not accepting sponsors.
-      </p>
 
-      <h3>Podcast Schedule</h3>
+      <h3>Neil Rogers Podcast Schedule</h3>
       <ul className="schedule">
         <li>MONDAY 1986-1989</li>
         <li>TUESDAY 1990-1997</li>
@@ -106,6 +110,49 @@ const Listen = () => {
         />
         <figcaption>Neil Rogers Show</figcaption>
       </figure>
+
+      <h3>Listen to the South Florida Radio Archives on:</h3>
+      <ul>
+        <li>
+          <a href="https://music.amazon.com/podcasts/cc82e207-a422-472b-971e-40abe1224904/south-florida-radio-archives">
+            Amazon Music
+          </a>
+        </li>
+        <li>
+          <a href="https://anchor.fm/south-florida-radio">AnchorFM</a>
+        </li>
+        <li>Google (coming soon)</li>
+        <li>iTunes (coming soon)</li>
+        <li>Overcast (coming soon)</li>
+        <li>
+          <a href="https://open.spotify.com/show/5CUR9xglGPKhkVSoBfaYxA">
+            Spotify
+          </a>
+        </li>
+        <li>
+          <a href="https://www.stitcher.com/podcast/neil-rogers-show/south-florida-radio-archives">
+            Stitcher
+          </a>
+        </li>
+        <li>
+          <a href="https://anchor.fm/s/7a6e3bb8/podcast/rss">RSS</a>
+        </li>
+      </ul>
+      <h3>South Florida Radio Archives Schedule</h3>
+      <p>
+        There is no set schedule for the <b>South Florida Radio Archives</b>. It
+        is free form. We take requests at <b>audio@neilrogers.org</b> and{" "}
+        <a href="https://twitter.com/NeilRogersRadio/">@NeilRogersRadio</a> on
+        Twitter. Check out our <Link to="/docs/">Docs</Link> page for a list of
+        shows that we have recovered.
+      </p>
+      <h3>Support and Sponsorship</h3>
+      <p>
+        If your podcast provider does not have the <b>Neil Rogers Show</b> or{" "}
+        <b>South Florida Radio Archives</b>, email <b>audio@neilrogers.org</b>{" "}
+        and we'll work to add it. These podcasts are a hobby not a business. We
+        are not accepting sponsors.
+      </p>
     </PrimaryLayout>
   )
 }
