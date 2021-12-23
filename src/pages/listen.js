@@ -121,9 +121,14 @@ const Listen = () => {
         <li>
           <a href="https://anchor.fm/south-florida-radio">AnchorFM</a>
         </li>
-        <li>Google (coming soon)</li>
-        <li>iTunes (coming soon)</li>
-        <li>Overcast (coming soon)</li>
+        <li>
+          Google (not working - they suck, use a different podcast provider)
+        </li>
+        <li>
+          <a href="https://podcasts.apple.com/us/podcast/south-florida-radio-archives/id1601867840">
+            iTunes
+          </a>
+        </li>
         <li>
           <a href="https://open.spotify.com/show/5CUR9xglGPKhkVSoBfaYxA">
             Spotify
