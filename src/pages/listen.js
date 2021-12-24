@@ -69,7 +69,7 @@ const Listen = () => {
         </li>
         <li>
           <a href="https://podcasts.google.com/feed/aHR0cDovL2ZlZWRzLmZlZWRidXJuZXIuY29tL05laWxSb2dlcnNTaG93">
-            Google
+            Google Podcasts
           </a>
         </li>
         <li>
@@ -130,7 +130,9 @@ const Listen = () => {
           <a href="https://castbox.fm/channel/id4721880">Castbox</a>
         </li>
         <li>
-          Google (not working - they suck, use a different podcast provider)
+          <a href="https://podcasts.google.com/feed/aHR0cHM6Ly9hbmNob3IuZm0vcy83YTZlM2JiOC9wb2RjYXN0L3Jzcw">
+            Google Podcasts
+          </a>
         </li>
         <li>
           <a href="https://podcasts.apple.com/us/podcast/south-florida-radio-archives/id1601867840">
