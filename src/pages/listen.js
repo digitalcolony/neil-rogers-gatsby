@@ -63,6 +63,11 @@ const Listen = () => {
           <a href="https://anchor.fm/neil-rogers-show">AnchorFM</a>
         </li>
         <li>
+          <a href="https://castbox.fm/channel/Neil-Rogers-Show-id539213">
+            Castbox
+          </a>
+        </li>
+        <li>
           <a href="https://podcasts.google.com/feed/aHR0cDovL2ZlZWRzLmZlZWRidXJuZXIuY29tL05laWxSb2dlcnNTaG93">
             Google
           </a>
@@ -120,6 +125,9 @@ const Listen = () => {
         </li>
         <li>
           <a href="https://anchor.fm/south-florida-radio">AnchorFM</a>
+        </li>
+        <li>
+          <a href="https://castbox.fm/channel/id4721880">Castbox</a>
         </li>
         <li>
           Google (not working - they suck, use a different podcast provider)
