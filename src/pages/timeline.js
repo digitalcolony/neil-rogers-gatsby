@@ -1,6 +1,6 @@
 import React from "react"
 import { Helmet } from "react-helmet"
-import Meta from "../pages/meta"
+import Meta from "../components/Meta"
 import { graphql, useStaticQuery } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
 import PrimaryLayout from "../layouts/PrimaryLayout"

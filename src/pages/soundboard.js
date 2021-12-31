@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import { Helmet } from "react-helmet"
-import Meta from "./meta"
+import Meta from "../components/Meta"
 import PrimaryLayout from "../layouts/PrimaryLayout"
 import Sound from "../components/Sound"
 import JSONData from "../data/soundboard.json"

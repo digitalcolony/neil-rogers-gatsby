@@ -1,6 +1,6 @@
 import React from "react"
 import { Helmet } from "react-helmet"
-import Meta from "./meta"
+import Meta from "../components/Meta"
 import PrimaryLayout from "../layouts/PrimaryLayout"
 
 const Docs = () => {

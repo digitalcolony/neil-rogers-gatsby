@@ -2,7 +2,7 @@ import React from "react"
 import { Helmet } from "react-helmet"
 import { graphql, useStaticQuery, Link } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
-import Meta from "./meta"
+import Meta from "../components/Meta"
 import PrimaryLayout from "../layouts/PrimaryLayout"
 
 const Listen = () => {

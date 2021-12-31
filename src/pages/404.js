@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet"
 import { GatsbyImage } from "gatsby-plugin-image"
 import { graphql, useStaticQuery } from "gatsby"
 import { Link } from "gatsby"
-import Meta from "../pages/meta"
+import Meta from "../components/Meta"
 import PrimaryLayout from "../layouts/PrimaryLayout"
 
 const Four04 = () => {

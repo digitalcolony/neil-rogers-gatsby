@@ -1,5 +1,5 @@
 import React from "react"
-import Meta from "../pages/meta"
+import Meta from "../components/Meta"
 import { Helmet } from "react-helmet"
 import { graphql, useStaticQuery, Link } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
