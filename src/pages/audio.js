@@ -1,7 +1,7 @@
 import React from "react"
 import { Helmet } from "react-helmet"
 import { graphql, useStaticQuery } from "gatsby"
-import Img from "gatsby-image"
+import { GatsbyImage } from "gatsby-plugin-image"
 import Meta from "./meta"
 import PrimaryLayout from "../layouts/PrimaryLayout"
 
@@ -10,11 +10,7 @@ const Audio = () => {
     query {
       pope: file(relativePath: { eq: "images/pope.jpg" }) {
         childImageSharp {
-          fluid {
-            presentationWidth
-            presentationHeight
-            ...GatsbyImageSharpFluid
-          }
+          gatsbyImageData(layout: FULL_WIDTH)
         }
       }
     }
@@ -134,16 +130,11 @@ const Audio = () => {
           </p>
         </aside>
       </section>
-      <figure
-        style={{
-          "max-width": "670px",
-          marginLeft: "auto",
-          marginRight: "auto",
-        }}
-      >
-        <Img
-          fluid={images.pope.childImageSharp.fluid}
+      <figure className="wider">
+        <GatsbyImage
+          image={images.pope.childImageSharp.gatsbyImageData}
           alt={"Neil Rogers as Pope"}
+          loading="eager"
         />
         <figcaption>Neil Rogers as Pope</figcaption>
       </figure>

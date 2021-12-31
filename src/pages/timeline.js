@@ -2,7 +2,7 @@ import React from "react"
 import { Helmet } from "react-helmet"
 import Meta from "../pages/meta"
 import { graphql, useStaticQuery } from "gatsby"
-import Img from "gatsby-image"
+import { GatsbyImage } from "gatsby-plugin-image"
 import PrimaryLayout from "../layouts/PrimaryLayout"
 
 const Timeline = () => {
@@ -10,164 +10,73 @@ const Timeline = () => {
     query {
       nms: file(relativePath: { eq: "images/neil_1959.jpg" }) {
         childImageSharp {
-          fixed {
-            ...GatsbyImageSharpFixed
-          }
-          fluid {
-            presentationWidth
-            presentationHeight
-            ...GatsbyImageSharpFluid
-          }
+          gatsbyImageData(layout: FULL_WIDTH)
         }
       }
       wspb: file(relativePath: { eq: "images/wspb-1450.jpg" }) {
         childImageSharp {
-          fixed {
-            ...GatsbyImageSharpFixed
-          }
-          fluid {
-            presentationWidth
-            presentationHeight
-            ...GatsbyImageSharpFluid
-          }
+          gatsbyImageData(layout: FULL_WIDTH)
         }
       }
       wkat: file(relativePath: { eq: "images/neil-rogers-wkat.jpg" }) {
         childImageSharp {
-          fixed {
-            ...GatsbyImageSharpFixed
-          }
-          fluid {
-            presentationWidth
-            presentationHeight
-            ...GatsbyImageSharpFluid
-          }
+          gatsbyImageData(layout: FULL_WIDTH)
         }
       }
       gay: file(relativePath: { eq: "images/Neil-comes-out.jpg" }) {
         childImageSharp {
-          fixed {
-            ...GatsbyImageSharpFixed
-          }
-          fluid {
-            presentationWidth
-            presentationHeight
-            ...GatsbyImageSharpFluid
-          }
+          gatsbyImageData(layout: FULL_WIDTH)
         }
       }
       nutrition: file(
         relativePath: { eq: "images/neil-rogers-nutrition-1.jpg" }
       ) {
         childImageSharp {
-          fixed {
-            ...GatsbyImageSharpFixed
-          }
-          fluid {
-            presentationWidth
-            presentationHeight
-            ...GatsbyImageSharpFluid
-          }
+          gatsbyImageData(layout: FULL_WIDTH)
         }
       }
       wnws: file(relativePath: { eq: "images/neil-wnws-1981.jpg" }) {
         childImageSharp {
-          fixed {
-            ...GatsbyImageSharpFixed
-          }
-          fluid {
-            presentationWidth
-            presentationHeight
-            ...GatsbyImageSharpFluid
-          }
+          gatsbyImageData(layout: FULL_WIDTH)
         }
       }
       neil_1985: file(relativePath: { eq: "images/neil-1985.jpg" }) {
         childImageSharp {
-          fixed {
-            ...GatsbyImageSharpFixed
-          }
-          fluid {
-            presentationWidth
-            presentationHeight
-            ...GatsbyImageSharpFluid
-          }
+          gatsbyImageData(layout: FULL_WIDTH)
         }
       }
       night: file(relativePath: { eq: "images/Neil_at_Night.jpg" }) {
         childImageSharp {
-          fixed {
-            ...GatsbyImageSharpFixed
-          }
-          fluid {
-            presentationWidth
-            presentationHeight
-            ...GatsbyImageSharpFluid
-          }
+          gatsbyImageData(layout: FULL_WIDTH)
         }
       }
       neil_rogers_show: file(
         relativePath: { eq: "images/neil-rogers-show.jpg" }
       ) {
         childImageSharp {
-          fixed {
-            ...GatsbyImageSharpFixed
-          }
-          fluid {
-            presentationWidth
-            presentationHeight
-            ...GatsbyImageSharpFluid
-          }
+          gatsbyImageData(layout: FULL_WIDTH)
         }
       }
       wiod: file(relativePath: { eq: "images/neil-rogers-wiod.jpg" }) {
         childImageSharp {
-          fixed {
-            ...GatsbyImageSharpFixed
-          }
-          fluid {
-            presentationWidth
-            presentationHeight
-            ...GatsbyImageSharpFluid
-          }
+          gatsbyImageData(layout: FULL_WIDTH)
         }
       }
       wqam: file(relativePath: { eq: "images/neil-rogers-wqam-560.jpg" }) {
         childImageSharp {
-          fixed {
-            ...GatsbyImageSharpFixed
-          }
-          fluid {
-            presentationWidth
-            presentationHeight
-            ...GatsbyImageSharpFluid
-          }
+          gatsbyImageData(layout: FULL_WIDTH)
         }
       }
       wsun: file(
         relativePath: { eq: "images/neil-rogers-wsun-douchebag2.jpg" }
       ) {
         childImageSharp {
-          fixed {
-            ...GatsbyImageSharpFixed
-          }
-          fluid {
-            presentationWidth
-            presentationHeight
-            ...GatsbyImageSharpFluid
-          }
+          gatsbyImageData(layout: FULL_WIDTH)
         }
       }
       zeta: file(relativePath: { eq: "images/zeta-94-9.jpg" }) {
         childImageSharp {
-          fixed {
-            ...GatsbyImageSharpFixed
-          }
-          fluid {
-            presentationWidth
-            presentationHeight
-            ...GatsbyImageSharpFluid
-          }
+          gatsbyImageData(layout: FULL_WIDTH)
         }
       }
     }
@@ -203,10 +112,11 @@ const Timeline = () => {
         Canandaigua Academy in 1959.
       </p>
 
-      <figure style={{ "max-width": "600px" }}>
-        <Img
-          fluid={images.nms.childImageSharp.fluid}
+      <figure>
+        <GatsbyImage
+          image={images.nms.childImageSharp.gatsbyImageData}
           alt={"Neil Rogers - 1959 National Merit Scholarship"}
+          loading="eager"
         />
         <figcaption>Neil Rogers - 1959 National Merit Scholarship</figcaption>
       </figure>
@@ -270,23 +180,20 @@ const Timeline = () => {
         1450 in Sarasota, FL.
       </p>
 
-      <div style={{ "max-width": "400px" }}>
-        <blockquote>
-          <em>
-            In 1973, Rogers moved to Sarasota, where quite by accident he did
-            his first talk radio show. The station hired a retiree from
-            Pittsburgh to do a talk show, but on his first day, the fellow
-            couldn’t figure out to work the phone and his guest didn’t show up.
-            The second day, the retiree’s blood pressure soared and his nose
-            bled. Rogers, who was spinning records at the station, came to the
-            rescue.
-          </em>
-        </blockquote>
-      </div>
+      <blockquote>
+        <em>
+          In 1973, Rogers moved to Sarasota, where quite by accident he did his
+          first talk radio show. The station hired a retiree from Pittsburgh to
+          do a talk show, but on his first day, the fellow couldn’t figure out
+          to work the phone and his guest didn’t show up. The second day, the
+          retiree’s blood pressure soared and his nose bled. Rogers, who was
+          spinning records at the station, came to the rescue.
+        </em>
+      </blockquote>
 
-      <figure style={{ "max-width": "600px" }}>
-        <Img
-          fluid={images.wspb.childImageSharp.fluid}
+      <figure>
+        <GatsbyImage
+          image={images.wspb.childImageSharp.gatsbyImageData}
           alt={"Neil Rogers at WSPB 1450"}
         />
         <figcaption>Neil Rogers at WSPB 1450</figcaption>
@@ -311,18 +218,18 @@ const Timeline = () => {
         worked a few weekends on WIOD playing records (May 30, 1990, @55:28).
       </p>
 
-      <figure style={{ "max-width": "600px" }}>
-        <Img
-          fluid={images.wkat.childImageSharp.fluid}
+      <figure>
+        <GatsbyImage
+          image={images.wkat.childImageSharp.gatsbyImageData}
           alt={"Neil Rogers at WKAT"}
         />
         <figcaption>Neil Rogers at WKAT</figcaption>
       </figure>
       <p>On December 17, 1976 Neil came out as gay on the air.</p>
 
-      <figure style={{ "max-width": "600px" }}>
-        <Img
-          fluid={images.gay.childImageSharp.fluid}
+      <figure>
+        <GatsbyImage
+          image={images.gay.childImageSharp.gatsbyImageData}
           alt={"Neil Rogers Comes Out as Gay"}
         />
         <figcaption>Source: Lakeland Ledger December 19, 1976</figcaption>
@@ -335,9 +242,9 @@ const Timeline = () => {
         Souci.
       </p>
 
-      <figure style={{ "max-width": "600px" }}>
-        <Img
-          fluid={images.nutrition.childImageSharp.fluid}
+      <figure>
+        <GatsbyImage
+          image={images.nutrition.childImageSharp.gatsbyImageData}
           alt={"Neil Rogers Nutrition"}
         />
         <figcaption>Neil Rogers Nutrition</figcaption>
@@ -361,9 +268,9 @@ const Timeline = () => {
         and 1983 on TV).
       </p>
 
-      <figure style={{ "max-width": "600px" }}>
-        <Img
-          fluid={images.wnws.childImageSharp.fluid}
+      <figure>
+        <GatsbyImage
+          image={images.wnws.childImageSharp.gatsbyImageData}
           alt={"Miami Hurricanes and Neil Rogers"}
         />
         <figcaption>Miami Hurricanes and Neil Rogers</figcaption>
@@ -400,9 +307,9 @@ const Timeline = () => {
         Midnight. On September 29, 1986, Neil moves his show to 10 AM – 2 PM.
       </p>
 
-      <figure style={{ "max-width": "600px" }}>
-        <Img
-          fluid={images.neil_1985.childImageSharp.fluid}
+      <figure>
+        <GatsbyImage
+          image={images.neil_1985.childImageSharp.gatsbyImageData}
           alt={"94 News - Neil Rogers"}
         />
         <figcaption>94 News - Neil Rogers</figcaption>
@@ -415,11 +322,12 @@ const Timeline = () => {
         Zeta 4.
       </p>
 
-      <figure style={{ "max-width": "600px" }}>
-        <Img
-          fluid={images.zeta.childImageSharp.fluid}
+      <figure>
+        <GatsbyImage
+          image={images.zeta.childImageSharp.gatsbyImageData}
           alt={"Neil Rogers at Zeta 4"}
         />
+
         <figcaption>Neil Rogers at Zeta 4</figcaption>
       </figure>
 
@@ -433,9 +341,9 @@ const Timeline = () => {
         weeks later.
       </p>
 
-      <figure style={{ "max-width": "600px" }}>
-        <Img
-          fluid={images.wiod.childImageSharp.fluid}
+      <figure>
+        <GatsbyImage
+          image={images.wiod.childImageSharp.gatsbyImageData}
           alt={"Neil Rogers at WIOD"}
         />
         <figcaption>Neil Rogers at WIOD</figcaption>
@@ -445,9 +353,9 @@ const Timeline = () => {
         the WSUN simulcast of the Neil Rogers Show ended. (date not confirmed)
       </p>
 
-      <figure style={{ "max-width": "600px" }}>
-        <Img
-          fluid={images.wsun.childImageSharp.fluid}
+      <figure>
+        <GatsbyImage
+          image={images.wsun.childImageSharp.gatsbyImageData}
           alt={"WSUN Douchebag - Neil Rogers"}
         />
         <figcaption>WSUN Douchebag - Neil Rogers</figcaption>
@@ -475,9 +383,9 @@ const Timeline = () => {
         on December 30, 1997.
       </p>
 
-      <figure style={{ "max-width": "600px" }}>
-        <Img
-          fluid={images.wqam.childImageSharp.fluid}
+      <figure>
+        <GatsbyImage
+          image={images.wqam.childImageSharp.gatsbyImageData}
           alt={"Neil Rogers at WQAM"}
         />
         <figcaption>Neil Rogers at WQAM</figcaption>
@@ -493,9 +401,9 @@ const Timeline = () => {
         </em>
       </p>
 
-      <figure style={{ "max-width": "600px" }}>
-        <Img
-          fluid={images.night.childImageSharp.fluid}
+      <figure>
+        <GatsbyImage
+          image={images.night.childImageSharp.gatsbyImageData}
           alt={"Neil at Night TV"}
         />
         <figcaption>Neil at Night TV</figcaption>
@@ -518,7 +426,7 @@ const Timeline = () => {
         <em>(Source: Neil Rogers Show May 14, 2009)</em>
       </p>
 
-      <p>On June 12, 2009, was the last Neil Rogers Show.</p>
+      <p>June 12th 2009 was the last Neil Rogers Show.</p>
 
       <h3>Retirement / Death (2010)</h3>
 
@@ -534,9 +442,9 @@ const Timeline = () => {
         </a>
       </p>
 
-      <figure style={{ "max-width": "600px" }}>
-        <Img
-          fluid={images.neil_rogers_show.childImageSharp.fluid}
+      <figure>
+        <GatsbyImage
+          image={images.neil_rogers_show.childImageSharp.gatsbyImageData}
           alt={"Neil Rogers Show with Jorge Rodriguez"}
         />
         <figcaption>Neil Rogers Show with Jorge Rodriguez</figcaption>
@@ -544,7 +452,8 @@ const Timeline = () => {
 
       <p>
         <em>
-          Artwork by <a href="http://thepowwowshow.net/">Luis Amado</a>
+          Artwork by{" "}
+          <a href="https://www.facebook.com/galaxykidcomics">Luis Amado</a>
         </em>
       </p>
 
@@ -552,7 +461,10 @@ const Timeline = () => {
         In 2016, Neil Rogers was inducted to the National Radio Hall of Fame.
       </p>
       <p>
-        Jorge Rodriguez passed away on July 3, 2020.{" "}
+        <a href="https://criticalmas.medium.com/tribute-to-jorge-rodriguez-deec8bcc37d8">
+          Jorge Rodriguez
+        </a>{" "}
+        passed away on July 3, 2020.{" "}
         <em>
           Source:{" "}
           <a href="https://deerfield-news.com/2020/07/04/south-florida-radio-host-and-neil-rogers-producer-protege-jorge-rodriguez-dies/">
@@ -560,7 +472,6 @@ const Timeline = () => {
           </a>
         </em>
       </p>
-      <p></p>
       <p>
         The HBO Documentary{" "}
         <a href="https://www.hbo.com/documentaries/537-votes">537 Votes</a>{" "}

@@ -2,7 +2,7 @@ import React from "react"
 import Meta from "../pages/meta"
 import { Helmet } from "react-helmet"
 import { graphql, useStaticQuery, Link } from "gatsby"
-import Img from "gatsby-image"
+import { GatsbyImage } from "gatsby-plugin-image"
 import PrimaryLayout from "../layouts/PrimaryLayout"
 
 const Index = () => {
@@ -10,14 +10,7 @@ const Index = () => {
     query {
       neil_mask: file(relativePath: { eq: "images/neil-mask-radio.jpg" }) {
         childImageSharp {
-          fixed {
-            ...GatsbyImageSharpFixed
-          }
-          fluid {
-            presentationWidth
-            presentationHeight
-            ...GatsbyImageSharpFluid
-          }
+          gatsbyImageData(layout: FULL_WIDTH)
         }
       }
     }
@@ -64,12 +57,14 @@ const Index = () => {
         <a href="https://en.wikipedia.org/wiki/Neil_Rogers">Wikipedia</a> or
         read our <Link to="/timeline/">Timeline</Link>.
       </p>
-      <div style={{ "max-width": "750px", marginTop: "30px" }}>
-        <Img
-          fluid={images.neil_mask.childImageSharp.fluid}
+      <figure className="wider">
+        <GatsbyImage
+          image={images.neil_mask.childImageSharp.gatsbyImageData}
           alt={"Neil Rogers - Radio Legend"}
+          loading="eager"
         />
-      </div>
+        <figcaption>Neil Rogers - Radio Legend</figcaption>
+      </figure>
 
       <h2>Connect and Share</h2>
 
@@ -81,10 +76,13 @@ const Index = () => {
           <a href="https://twitter.com/NeilRogersRadio">Twitter</a>
         </li>
         <li>
-          <a href="https://www.flickr.com/photos/neilrogersradio">Flickr</a>, <a href="https://archive.org/details/neil-rogers-photos">Archive</a> (Archive of Neil Rogers' photos)
+          <a href="https://www.flickr.com/photos/neilrogersradio">Flickr</a>,{" "}
+          <a href="https://archive.org/details/neil-rogers-photos">Archive</a>{" "}
+          (Archive of Neil Rogers' photos)
         </li>
         <li>
-          <a href="https://www.flickr.com/photos/133613327@N06/">Flickr</a> (by Neil Rogers History)
+          <a href="https://www.flickr.com/photos/133613327@N06/">Flickr</a> (by
+          Neil Rogers History)
         </li>
         <li>
           <a href="https://www.instagram.com/neilrogersradio/">Instagram</a>

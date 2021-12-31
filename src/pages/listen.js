@@ -1,7 +1,7 @@
 import React from "react"
 import { Helmet } from "react-helmet"
 import { graphql, useStaticQuery, Link } from "gatsby"
-import Img from "gatsby-image"
+import { GatsbyImage } from "gatsby-plugin-image"
 import Meta from "./meta"
 import PrimaryLayout from "../layouts/PrimaryLayout"
 
@@ -10,11 +10,7 @@ const Listen = () => {
     query {
       neil: file(relativePath: { eq: "images/neil-rogers-show.jpg" }) {
         childImageSharp {
-          fluid {
-            presentationWidth
-            presentationHeight
-            ...GatsbyImageSharpFluid
-          }
+          gatsbyImageData(layout: FULL_WIDTH)
         }
       }
     }
@@ -102,15 +98,9 @@ const Listen = () => {
         <li>SUNDAY 2008-2009</li>
       </ul>
 
-      <figure
-        style={{
-          "max-width": "670px",
-          marginLeft: "auto",
-          marginRight: "auto",
-        }}
-      >
-        <Img
-          fluid={images.neil.childImageSharp.fluid}
+      <figure className="wider">
+        <GatsbyImage
+          image={images.neil.childImageSharp.gatsbyImageData}
           alt={"Neil Rogers Podcast"}
         />
         <figcaption>Neil Rogers Show</figcaption>

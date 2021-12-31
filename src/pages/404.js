@@ -1,6 +1,6 @@
 import React from "react"
 import { Helmet } from "react-helmet"
-import Img from "gatsby-image"
+import { GatsbyImage } from "gatsby-plugin-image"
 import { graphql, useStaticQuery } from "gatsby"
 import { Link } from "gatsby"
 import Meta from "../pages/meta"
@@ -11,11 +11,7 @@ const Four04 = () => {
     query {
       sigh: file(relativePath: { eq: "images/neil-sigh.jpg" }) {
         childImageSharp {
-          fluid {
-            presentationWidth
-            presentationHeight
-            ...GatsbyImageSharpFluid
-          }
+          gatsbyImageData(layout: FULL_WIDTH)
         }
       }
     }
@@ -33,14 +29,12 @@ const Four04 = () => {
         <Link to="/">Home Page</Link>.
       </p>
 
-      <figure
-        style={{
-          "max-width": "670px",
-          marginLeft: "auto",
-          marginRight: "auto",
-        }}
-      >
-        <Img fluid={images.sigh.childImageSharp.fluid} alt={"Neil Rogers"} />
+      <figure className="wider">
+        <GatsbyImage
+          image={images.sigh.childImageSharp.gatsbyImageData}
+          alt={"Neil Rogers"}
+          loading="eager"
+        />
         <figcaption>Neil Rogers</figcaption>
       </figure>
     </PrimaryLayout>
