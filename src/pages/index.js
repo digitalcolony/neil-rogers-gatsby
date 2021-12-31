@@ -34,10 +34,6 @@ const Index = () => {
         <meta property="og:url" content="https://neilrogers.org" />
       </Helmet>
       <p>
-        If you've found this site after watching the HBO documentary{" "}
-        <b>537 Votes</b>, you've come to the right spot.
-      </p>
-      <p>
         NeilRogers.org is the work of a collection of fans dedicated to
         preserving the memory of radio’s Neil Rogers. Our primary goal is
         locating and sharing audio files. In addition to Neil Rogers, the
