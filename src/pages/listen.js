@@ -49,7 +49,7 @@ const Listen = () => {
       </p>
 
       <h3>Listen to the Neil Rogers Podcast on:</h3>
-      <ul>
+      <ul className="podcast">
         <li>
           <a href="https://music.amazon.com/podcasts/299b0ce8-1edf-4a9e-bb16-6c1fa63bfc90/Neil-Rogers-Show?">
             Amazon Music
@@ -82,7 +82,6 @@ const Listen = () => {
           <a href="https://www.stitcher.com/show/neil-rogers-show">Stitcher</a>
         </li>
         <li>
-          or directly from our{" "}
           <a href="http://feeds.feedburner.com/NeilRogersShow">Podcast RSS</a>
         </li>
       </ul>
@@ -107,7 +106,7 @@ const Listen = () => {
       </figure>
 
       <h3>Listen to the South Florida Radio Archives on:</h3>
-      <ul>
+      <ul className="podcast">
         <li>
           <a href="https://music.amazon.com/podcasts/cc82e207-a422-472b-971e-40abe1224904/south-florida-radio-archives">
             Amazon Music
@@ -140,7 +139,7 @@ const Listen = () => {
           </a>
         </li>
         <li>
-          <a href="https://anchor.fm/s/7a6e3bb8/podcast/rss">RSS</a>
+          <a href="https://anchor.fm/s/7a6e3bb8/podcast/rss">Podcast RSS</a>
         </li>
       </ul>
       <h3>South Florida Radio Archives Schedule</h3>

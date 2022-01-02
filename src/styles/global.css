@@ -31,12 +31,17 @@ blockquote {
 }
 
 ul.schedule {
+  columns: 3;
+  list-style-type: none; /* Remove bullets */
+  padding: 3; /* Remove padding */
+  margin: 0; /* Remove margins */
+}
+
+ul.podcast {
   columns: 2;
   list-style-type: none; /* Remove bullets */
   padding: 3; /* Remove padding */
   margin: 0; /* Remove margins */
-  background-color: white;
-  border: 1px dashed black;
 }
 
 @media screen and (max-width: 500px) {
