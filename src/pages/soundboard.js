@@ -5,9 +5,11 @@ import PrimaryLayout from "../layouts/PrimaryLayout"
 import Sound from "../components/Sound"
 import JSONData from "../data/soundboard.json"
 import * as soundboardStyles from "../styles/soundboard.module.css"
+import RadioButton from "../components/RadioButton"
 
 function FilteredSoundList({ sounds }) {
   const [query, setQuery] = useState("")
+  const [action, setAction] = useState("play")
 
   sounds.sort((a, b) => {
     if (a.name < b.name) return -1
@@ -15,7 +17,10 @@ function FilteredSoundList({ sounds }) {
     return 0
   })
 
-  const onChange = (event) => setQuery(event.target.value)
+  const handleSearch = (event) => setQuery(event.target.value)
+  const handlePlayChange = () => setAction("play")
+  const handleDownloadChange = () => setAction("download")
+  const handleClipboardChange = () => setAction("clipboard")
 
   const filteredSounds = sounds.filter((item) => {
     return (
@@ -26,13 +31,39 @@ function FilteredSoundList({ sounds }) {
 
   return (
     <div>
-      <input
-        type="search"
-        value={query}
-        onChange={onChange}
-        className={soundboardStyles.filter}
-        placeholder="Search Sounds"
-      />
+      <ul>
+        <li>
+          <input
+            type="search"
+            value={query}
+            onChange={handleSearch}
+            className={soundboardStyles.filter}
+            placeholder="Search Sounds"
+          />
+        </li>
+        <li>
+          <RadioButton
+            label="Play"
+            value={action === "play"}
+            onChange={handlePlayChange}
+          />
+        </li>
+        <li>
+          <RadioButton
+            label="Download"
+            value={action === "download"}
+            onChange={handleDownloadChange}
+          />
+        </li>
+        <li>
+          <RadioButton
+            label="Copy to Clipboard"
+            value={action === "clipboard"}
+            onChange={handleClipboardChange}
+          />
+        </li>
+      </ul>
+
       <div>
         {filteredSounds.map((drop) => (
           <Sound
@@ -40,6 +71,7 @@ function FilteredSoundList({ sounds }) {
             name={drop.name}
             artist={drop.artist}
             key={drop.mp3}
+            action={action}
           />
         ))}
       </div>

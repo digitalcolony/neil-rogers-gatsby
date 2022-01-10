@@ -2,7 +2,7 @@ import React from "react"
 import Header from "../components/Header"
 import Footer from "../components/Footer"
 
-const PrimaryLayout = props => (
+const PrimaryLayout = (props) => (
   <div>
     <Header showFilter={props.soundboard} title={props.title} />
     <main>
@@ -10,7 +10,7 @@ const PrimaryLayout = props => (
         <div>{props.children}</div>
       </section>
     </main>
-    <Footer/>
+    <Footer />
   </div>
 )
 
