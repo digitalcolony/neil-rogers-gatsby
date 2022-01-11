@@ -57,7 +57,7 @@ function FilteredSoundList({ sounds }) {
         </li>
         <li>
           <RadioButton
-            label="Copy to Clipboard"
+            label="Copy Link to Clipboard"
             value={action === "clipboard"}
             onChange={handleClipboardChange}
           />
