@@ -17,4 +17,5 @@ li {
 }
 input[type="radio"]:checked + span {
   background: yellow;
+  color: black;
 }

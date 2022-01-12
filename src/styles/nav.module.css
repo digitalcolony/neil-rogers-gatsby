@@ -35,11 +35,9 @@ nav li {
 nav a {
   text-decoration: none;
 }
-nav a:active {
-  text-decoration: none;
-  color: black;
-}
-nav a:hover {
-  text-decoration: none;
-  color: navy;
+
+@media (prefers-color-scheme: dark) {
+  nav a:hover {
+    color: yellow;
+  }
 }

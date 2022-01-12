@@ -394,7 +394,7 @@ const Timeline = () => {
       <p>
         Neil’s TV show “Neil at Night” began broadcasting on Monday June 8th,
         1998. The show Neil at Night ran on WAMI Channel 69 from 8:30-9:00 PM
-        and again from 10:30-11:00 PM. It’s last show was on November 4, 1998.{" "}
+        and again from 10:30-11:00 PM. The final show was on November 4, 1998.{" "}
         <em>
           (Source:{" "}
           <a href="https://youtu.be/-Dy78DytGXU">Neil Rogers WAMI video</a>)
@@ -422,7 +422,7 @@ const Timeline = () => {
       </p>
 
       <p>
-        On May 13, 2009, Jorge Rodriquez was fired by WQAM.{" "}
+        On May 13, 2009, Jorge Rodriguez was fired by WQAM.{" "}
         <em>(Source: Neil Rogers Show May 14, 2009)</em>
       </p>
 
