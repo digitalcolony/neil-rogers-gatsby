@@ -97,6 +97,12 @@
             "mp3": "/sounds/Basta-Del-Chupeteo.mp3"
         },
         {
+            "name": "Beware of Exploding Balls",
+            "artist": "Jennifer Rehm",
+            "duration": "0:03",
+            "mp3": "/sounds/Beware-of-Exploding-Balls.mp3"
+        },
+        {
             "name": "Big O Jingle",
             "artist": "",
             "duration": "0:04",
