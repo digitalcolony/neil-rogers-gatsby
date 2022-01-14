@@ -106,7 +106,7 @@ const Soundboard = () => {
 
       <p>
         {" "}
-        You can download these drops on{" "}
+        You can also download these drops on{" "}
         <a href="https://archive.org/details/neil-rogers-show-soundboard">
           Archive
         </a>{" "}
