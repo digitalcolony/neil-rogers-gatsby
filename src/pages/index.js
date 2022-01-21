@@ -15,6 +15,7 @@ const Index = () => {
       }
     }
   `)
+
   return (
     <PrimaryLayout title="🎙The Neil Rogers Show">
       <Meta />
@@ -64,7 +65,7 @@ const Index = () => {
 
       <h2>Connect and Share</h2>
 
-      <ul>
+      <ul className="podcast">
         <li>
           <a href="https://www.youtube.com/c/NeilRogersRadio">YouTube</a>
         </li>

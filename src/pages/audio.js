@@ -23,13 +23,13 @@ const Audio = () => {
         <title>Download The Neil Rogers Show</title>
         <meta
           name="description"
-          content="Download audio for the radio god Neil Rogers."
+          content="Download audio from the Radio God Neil Rogers."
         />
-        <link rel="canonical" href="https://neilrogers.org/download/" />
+        <link rel="canonical" href="https://neilrogers.org/audio/" />
         <meta property="og:title" content="Download The Neil Rogers Show" />
         <meta
           property="og:description"
-          content="Download audio for the radio god Neil Rogers."
+          content="Download audio from the Radio God Neil Rogers."
         />
         <meta property="og:url" content="https://neilrogers.org" />
       </Helmet>

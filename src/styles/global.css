@@ -29,23 +29,24 @@ blockquote {
   margin-left: 10px;
   margin-right: auto;
 }
-
 ul.schedule {
   columns: 3;
   list-style-type: none; /* Remove bullets */
   padding: 3; /* Remove padding */
   margin: 0; /* Remove margins */
 }
-
-ul.podcast {
-  columns: 2;
-  list-style-type: none; /* Remove bullets */
-  padding: 3; /* Remove padding */
-  margin: 0; /* Remove margins */
-}
-
 @media screen and (max-width: 500px) {
   ul.schedule {
     columns: 1;
   }
+}
+
+ul.podcast {
+  display: inline-block;
+  list-style-type: none; /* Remove bullets */
+  padding: 3; /* Remove padding */
+  margin: 0; /* Remove margins */
+}
+ul.podcast li {
+  display: inline-block;
 }
