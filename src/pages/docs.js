@@ -104,7 +104,7 @@ const Docs = () => {
         </a>
       </p>
       <p>
-        <a href="https://medium.com/@CriticalMAS/learning-to-spell-with-neil-rogers-neil-rogers-dfe5a600ee72">
+        <a href="https://criticalmas.medium.com/learning-to-spell-with-neil-rogers-neil-rogers-dfe5a600ee72">
           Learning to Spell With Neil Rogers
         </a>{" "}
         - Common spelling mistakes associated with the Neil Rogers Show.
