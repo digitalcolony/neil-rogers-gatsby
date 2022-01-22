@@ -49,42 +49,42 @@ const Listen = () => {
       </p>
 
       <h3>Listen to the Neil Rogers Podcast on:</h3>
-      <ul className="podcast">
-        <li>
+      <div className="links">
+        <p>
           <a href="https://music.amazon.com/podcasts/299b0ce8-1edf-4a9e-bb16-6c1fa63bfc90/Neil-Rogers-Show?">
             Amazon Music
           </a>
-        </li>
-        <li>
+        </p>
+        <p>
           <a href="https://anchor.fm/neil-rogers-show">AnchorFM</a>
-        </li>
-        <li>
+        </p>
+        <p>
           <a href="https://castbox.fm/channel/Neil-Rogers-Show-id539213">
             Castbox
           </a>
-        </li>
-        <li>
+        </p>
+        <p>
           <a href="https://podcasts.google.com/feed/aHR0cDovL2ZlZWRzLmZlZWRidXJuZXIuY29tL05laWxSb2dlcnNTaG93">
             Google Podcasts
           </a>
-        </li>
-        <li>
+        </p>
+        <p>
           <a href="https://itunes.apple.com/us/podcast/neil-rogers-show/id1231601174">
             iTunes
           </a>
-        </li>
-        <li>
+        </p>
+        <p>
           <a href="https://open.spotify.com/show/2eQORHonddaXiNLPrVDbH3">
             Spotify
           </a>
-        </li>
-        <li>
+        </p>
+        <p>
           <a href="https://www.stitcher.com/show/neil-rogers-show">Stitcher</a>
-        </li>
-        <li>
+        </p>
+        <p>
           <a href="http://feeds.feedburner.com/NeilRogersShow">Podcast RSS</a>
-        </li>
-      </ul>
+        </p>
+      </div>
 
       <h3>Neil Rogers Podcast Schedule</h3>
       <ul className="schedule">
@@ -106,42 +106,43 @@ const Listen = () => {
       </figure>
 
       <h3>Listen to the South Florida Radio Archives on:</h3>
-      <ul className="podcast">
-        <li>
+      <div className="links">
+        <p>
           <a href="https://music.amazon.com/podcasts/cc82e207-a422-472b-971e-40abe1224904/south-florida-radio-archives">
             Amazon Music
           </a>
-        </li>
-        <li>
+        </p>
+        <p>
           <a href="https://anchor.fm/south-florida-radio">AnchorFM</a>
-        </li>
-        <li>
+        </p>
+        <p>
           <a href="https://castbox.fm/channel/id4721880">Castbox</a>
-        </li>
-        <li>
+        </p>
+        <p>
           <a href="https://podcasts.google.com/feed/aHR0cHM6Ly9hbmNob3IuZm0vcy83YTZlM2JiOC9wb2RjYXN0L3Jzcw">
             Google Podcasts
           </a>
-        </li>
-        <li>
+        </p>
+        <p>
           <a href="https://podcasts.apple.com/us/podcast/south-florida-radio-archives/id1601867840">
             iTunes
           </a>
-        </li>
-        <li>
+        </p>
+        <p>
           <a href="https://open.spotify.com/show/5CUR9xglGPKhkVSoBfaYxA">
             Spotify
           </a>
-        </li>
-        <li>
+        </p>
+        <p>
           <a href="https://www.stitcher.com/podcast/neil-rogers-show/south-florida-radio-archives">
             Stitcher
           </a>
-        </li>
-        <li>
+        </p>
+        <p>
           <a href="https://anchor.fm/s/7a6e3bb8/podcast/rss">Podcast RSS</a>
-        </li>
-      </ul>
+        </p>
+      </div>
+
       <h3>South Florida Radio Archives Schedule</h3>
       <p>
         There is no set schedule for the <b>South Florida Radio Archives</b>. It

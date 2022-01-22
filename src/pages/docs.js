@@ -146,24 +146,24 @@ const Docs = () => {
         they are looking for.
       </p>
 
-      <ol>
-        <li>
-          Go to YouTube and find a show without notes or peek at our shared{" "}
+      <div className="links">
+        <p>
+          1: Go to YouTube and find a show without notes or peek at our shared{" "}
           <a href="https://docs.google.com/spreadsheets/d/1czK9DiOqCK_P8lYS5Im8a_u9IZnKW39lBAuq3FXdmRM/edit?usp=sharing">
             Google Drive Spreadsheet
           </a>
           .
-        </li>
-        <li>Listen to show and take notes.</li>
-        <li>
-          Post the show notes either as a comment on the video or email them to
-          audio@neilrogers.org.
-        </li>
-        <li>
-          Those notes will either be pinned (as top comment) and/or added to the
-          show description.
-        </li>
-      </ol>
+        </p>
+        <p>2: Listen to show and take notes.</p>
+        <p>
+          3: Post the show notes either as a comment on the video or email them
+          to audio@neilrogers.org.
+        </p>
+        <p>
+          4: Those notes will either be pinned (as top comment) and/or added to
+          the show description.
+        </p>
+      </div>
 
       <h4>#3 Share and Like</h4>
       <p>
@@ -177,21 +177,23 @@ const Docs = () => {
       <p>
         In 1999 Yahoo! acquired Broadcast.com, which archived the Neil Rogers
         Show in the early days. We need many of the shows from December 30,
-        1997, to January 19, 1999. They will be in Real Audio format. Below is a
-        list of URLs that might be clues as to what servers or backup archives
-        these audio files might be found.{" "}
+        1997, to January 19, 1999. They will be in Real Audio format.
+      </p>
+      <p>
+        Below is a list of URLs that might be clues as to what servers or backup
+        archives these audio files might be found.{" "}
         <b>Please help us recover these shows!</b>
       </p>
 
-      <ul style={{ listStyleType: "none", wordBreak: "break-all" }}>
-        <li>www.broadcast.com/radio/archives/wqam/rogers/</li>
-        <li>www.yahoo.com/radio/archives/wqam/rogers/</li>
-        <li>radio.yahoo.com//archives/wqam/rogers/</li>
-        <li>launch.yahoo.com/launchcast/archives/wqam/rogers/</li>
-        <li>new.music.yahoo.com/launchcast/archives/wqam/rogers/</li>
-        <li>music.yahoo.com/launchcast/archives/wqam/rogers/</li>
-        <li>playlist.broadcast.com</li>
-      </ul>
+      <div className="links yahoo">
+        <p>www.broadcast.com/radio/archives/wqam/rogers/</p>
+        <p>www.yahoo.com/radio/archives/wqam/rogers/</p>
+        <p>radio.yahoo.com//archives/wqam/rogers/</p>
+        <p>launch.yahoo.com/launchcast/archives/wqam/rogers/</p>
+        <p>new.music.yahoo.com/launchcast/archives/wqam/rogers/</p>
+        <p>music.yahoo.com/launchcast/archives/wqam/rogers/</p>
+        <p>playlist.broadcast.com</p>
+      </div>
 
       <p>
         Yahoo! will also have shows from 2000 to May 2002, which we need for our

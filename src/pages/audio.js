@@ -34,19 +34,16 @@ const Audio = () => {
         <meta property="og:url" content="https://neilrogers.org" />
       </Helmet>
 
+      <p>
+        The Neil Rogers Audio Restoration Project has recovered almost{" "}
+        <mark>
+          <b>5,000 hours of commercial-free radio</b>
+        </mark>
+        . In addition to Neil Rogers, we also have shows from other South
+        Florida radio icons. You are free to use the links below to download
+        everything for free. No account is required.
+      </p>
       <section>
-        <header>
-          <p>
-            The Neil Rogers Audio Restoration Project has recovered almost{" "}
-            <mark>
-              <b>5,000 hours of commercial-free radio</b>
-            </mark>
-            . In addition to Neil Rogers, we also have shows from other South
-            Florida radio icons. You are free to use the links below to download
-            everything for free. No account is required.
-          </p>
-        </header>
-
         <aside>
           <h3>YouTube</h3>
 
@@ -144,8 +141,8 @@ const Audio = () => {
           We have recovered every single "Best of CD" that Neil released. Some
           of the early years were recovered from cassette.
         </p>
-        <ul>
-          <li>
+        <div className="links">
+          <p>
             <a
               href="https://1drv.ms/u/s!AgQrITkx1J-8pPcHiQJAWd_dwKJKGw?e=yc35P0"
               target="_blank"
@@ -153,9 +150,9 @@ const Audio = () => {
             >
               OneDrive
             </a>{" "}
-            (the Sounds and CDs folder)
-          </li>
-          <li>
+            (Sounds and CDs folder)
+          </p>
+          <p>
             <a
               href="https://www.youtube.com/playlist?list=PL8h2eiL0gjh9ccaSm8yEwCOWo7cHJ33Cd"
               target="_blank"
@@ -163,8 +160,8 @@ const Audio = () => {
             >
               YouTube
             </a>
-          </li>
-          <li>
+          </p>
+          <p>
             <a
               href="https://archive.org/details/@neil_rogers_radio"
               target="_blank"
@@ -172,8 +169,8 @@ const Audio = () => {
             >
               Archive.org
             </a>
-          </li>
-        </ul>
+          </p>
+        </div>
       </section>
     </PrimaryLayout>
   )

@@ -41,12 +41,12 @@ ul.schedule {
   }
 }
 
-ul.podcast {
-  display: inline-block;
-  list-style-type: none; /* Remove bullets */
-  padding: 3; /* Remove padding */
-  margin: 0; /* Remove margins */
+.links {
+  margin-left: 40px;
 }
-ul.podcast li {
-  display: inline-block;
+.yahoo {
+  font-family: monospace, monospace;
+  font-size: 1.2em;
+  list-style-type: none;
+  word-break: break-all;
 }

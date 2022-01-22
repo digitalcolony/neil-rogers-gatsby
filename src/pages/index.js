@@ -64,59 +64,58 @@ const Index = () => {
       </figure>
 
       <h2>Connect and Share</h2>
-
-      <ul className="podcast">
-        <li>
+      <div className="links">
+        <p>
           <a href="https://www.youtube.com/c/NeilRogersRadio">YouTube</a>
-        </li>
-        <li>
+        </p>
+        <p>
           <a href="https://twitter.com/NeilRogersRadio">Twitter</a>
-        </li>
-        <li>
+        </p>
+        <p>
           <a href="https://www.flickr.com/photos/neilrogersradio">Flickr</a>,{" "}
           <a href="https://archive.org/details/neil-rogers-photos">Archive</a>{" "}
           (Archive of Neil Rogers' photos)
-        </li>
-        <li>
+        </p>
+        <p>
           <a href="https://www.flickr.com/photos/133613327@N06/">Flickr</a> (by
           Neil Rogers History)
-        </li>
-        <li>
+        </p>
+        <p>
           <a href="https://www.instagram.com/neilrogersradio/">Instagram</a>
-        </li>
-        <li>
+        </p>
+        <p>
           <a href="https://github.com/NeilRogersRadio">GitHub</a>
-        </li>
-      </ul>
+        </p>
+      </div>
 
       <h2>Friends of Neil</h2>
 
-      <ul>
-        <li>
+      <div className="links">
+        <p>
           <a href="https://soflochannel.com/">SoFloChannel</a> (streaming Neil
           and Jorge)
-        </li>
-        <li>
+        </p>
+        <p>
           <a href="https://www.youtube.com/watch?list=PLWLdPbUmHlwEHf-KDM_aCLFQJezAvQ4lX&v=gC5xglFjNdE">
             Jorge Rodriguez (RIP)
           </a>{" "}
           (YouTube Playlist)
-        </li>
-        <li>
+        </p>
+        <p>
           <a href="https://sites.google.com/site/donbrowne/wiod">
             The Rick {"&"} Suds Show
           </a>
-        </li>
-        <li>
+        </p>
+        <p>
           <a href="https://www.normkentshow.com/">Norm Kent</a>
-        </li>
-        <li>
+        </p>
+        <p>
           <a href="http://www.thebritsomersshow.com/">Brit Somers</a>
-        </li>
-        <li>
+        </p>
+        <p>
           <a href="https://stanmajor.blogspot.com/">Stan Major (RIP)</a>
-        </li>
-      </ul>
+        </p>
+      </div>
 
       <h3>Copyright Disclaimer Under Section 107 of the Copyright Act 1976</h3>
       <p>
