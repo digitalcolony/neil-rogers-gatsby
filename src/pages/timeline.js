@@ -467,7 +467,7 @@ const Timeline = () => {
         passed away on July 3, 2020.{" "}
         <em>
           Source:{" "}
-          <a href="https://deerfield-news.com/2020/07/04/south-florida-radio-host-and-neil-rogers-producer-protege-jorge-rodriguez-dies/">
+          <a href="https://www.deerfield-news.com/2020/07/04/south-florida-radio-host-and-neil-rogers-producer-protege-jorge-rodriguez-dies/">
             Deerfield News
           </a>
         </em>

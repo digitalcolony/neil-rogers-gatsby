@@ -36,10 +36,4 @@
       <changefreq>monthly</changefreq>
       <priority>0.8</priority>
    </url>
-   <url>
-      <loc>http://neilrogers.org/</loc>
-      <lastmod>2022-01-19</lastmod>
-      <changefreq>monthly</changefreq>
-      <priority>0.8</priority>
-   </url>
 </urlset> 

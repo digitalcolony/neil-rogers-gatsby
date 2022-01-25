@@ -60,7 +60,7 @@ const Docs = () => {
         us recover so much of Neil's memory.
       </p>
       <p>
-        <a href="https://medium.com/@CriticalMAS/tribute-to-jorge-rodriguez-deec8bcc37d8">
+        <a href="https://criticalmas.medium.com/tribute-to-jorge-rodriguez-deec8bcc37d8">
           Tribute to Jorge Rodriguez
         </a>{" "}
         - Jorge was the longtime producer and guest host for the Neil Rogers
