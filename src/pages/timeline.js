@@ -410,6 +410,18 @@ const Timeline = () => {
       </figure>
 
       <p>
+        Starting in 2002, Neil began broadcasting most of the year from his
+        Toronto apartment.{" "}
+        <em>
+          (Source:{" "}
+          <a href="https://www.sun-sentinel.com/news/fl-xpm-2002-03-23-0203220576-story.html">
+            AT WQAM, WHO'S ON FIRST, WHAT'S ON SECOND?
+          </a>
+          )
+        </em>
+      </p>
+
+      <p>
         Neil’s last public appearance was on May 17, 2008 at Gulfstream Park and
         Casino in Hallandale.{" "}
         <em>
