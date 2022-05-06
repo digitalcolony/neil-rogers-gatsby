@@ -334,7 +334,12 @@ const Timeline = () => {
       <p>On November 1, 1988, Neil did his last show on Zeta 4.</p>
       <h3>WIOD (1988 – 1997)</h3>
 
-      <p>On November 7, 1988 he debuted middays for WIOD.</p>
+      <p>On November 7, 1988 he debuted middays for WIOD. </p>
+
+      <p>
+        In early December 1989, Glen Hill "The Bird" was fired from the Neil
+        Rogers Show.
+      </p>
 
       <p>
         Neil Rogers suffered a stroke on April 2, 1990 and was back on the air 3
