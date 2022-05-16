@@ -83,6 +83,17 @@ const Docs = () => {
           Interview with Radio Ink (January 2014)
         </a>
       </p>
+      <p>
+        <a href="https://www.sun-sentinel.com/news/fl-xpm-2014-01-04-fl-neil-rogers-radio-legacy-20140103-story.html">
+          A Neil Rogers renaissance (January 2014: Sun Sentinel)
+        </a>
+      </p>
+      <p>
+        <a href="https://southfloridareporter.com/legendary-radio-host-neil-rogers-lives-on-online/">
+          Legendary Radio Host Neil Rogers Lives On … Online! (April 2018: Miami
+          Herald)
+        </a>
+      </p>
 
       <h3>Other</h3>
       <p>
