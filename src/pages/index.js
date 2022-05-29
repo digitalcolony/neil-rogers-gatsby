@@ -84,6 +84,12 @@ const Index = () => {
           <a href="https://www.instagram.com/neilrogersradio/">Instagram</a>
         </p>
         <p>
+          <a href="https://www.instagram.com/neilrogersradiohistory/">
+            Instagram{" "}
+          </a>{" "}
+          (by Neil Rogers Radio History)
+        </p>
+        <p>
           <a href="https://github.com/NeilRogersRadio">GitHub</a>
         </p>
       </div>
