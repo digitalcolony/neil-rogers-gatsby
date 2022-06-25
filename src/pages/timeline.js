@@ -496,6 +496,23 @@ const Timeline = () => {
         Rogers Show.
       </p>
       <p>
+        In May 2022, the new owner of 1470 WWNN Pompano Beach FL began
+        broadcasting archived Neil Rogers Show clips as "The Best of Neal
+        Rogers" (misspelled) for an hour on weekdays.{" "}
+        <em>
+          Source:{" "}
+          <a href="https://archive.ph/RWrsZ">WWNN Archived schedule page</a>
+        </em>
+        . Six weeks later, the station was sold again and the Neil Rogers Show
+        was taken off the air.{" "}
+        <em>
+          Source:{" "}
+          <a href="https://radioinsight.com/headlines/226795/vic-canales-media-group-acquires-wwnn/">
+            Radio Insight
+          </a>
+        </em>
+      </p>
+      <p>
         <em>
           Photos used in this timeline plus hundreds more can be viewed and
           downloaded on the{" "}
