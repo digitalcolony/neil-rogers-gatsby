@@ -355,6 +355,12 @@
             "mp3": "/sounds/Frosty-Nads.mp3"
         },
         {
+            "name": "Fugetaboutit",
+            "artist": "Moe Howard",
+            "duration": "0:01",
+            "mp3": "/sounds/Fugetaboutit.mp3"
+        },
+        {
             "name": "Geldie I Fu**ed Him Oh",
             "artist": "Caller",
             "duration": "0:19",
@@ -761,6 +767,12 @@
             "artist": "Scott Ferrall",
             "duration": "0:02",
             "mp3": "/sounds/I'll-Smack-You.mp3"
+        },
+        {
+            "name": "I'm a Catholic",
+            "artist": "",
+            "duration": "0:05",
+            "mp3": "/sounds/I'm-a-Catholic.mp3"
         },
         {
             "name": "I'm Dying Over Here",
