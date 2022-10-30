@@ -8,7 +8,7 @@ import PrimaryLayout from "../layouts/PrimaryLayout"
 const Timeline = () => {
   const images = useStaticQuery(graphql`
     query {
-      nms: file(relativePath: { eq: "images/neil_1959.jpg" }) {
+      nms: file(relativePath: { eq: "images/neil-restored-1959.jpg" }) {
         childImageSharp {
           gatsbyImageData(layout: FULL_WIDTH)
         }
@@ -18,34 +18,36 @@ const Timeline = () => {
           gatsbyImageData(layout: FULL_WIDTH)
         }
       }
-      wkat: file(relativePath: { eq: "images/neil-rogers-wkat.jpg" }) {
+      wkat: file(relativePath: { eq: "images/neil-wkat-restored.png" }) {
         childImageSharp {
           gatsbyImageData(layout: FULL_WIDTH)
         }
       }
-      gay: file(relativePath: { eq: "images/Neil-comes-out.jpg" }) {
+      gay: file(relativePath: { eq: "images/neil-comes-out-restored.jpg" }) {
         childImageSharp {
           gatsbyImageData(layout: FULL_WIDTH)
         }
       }
       nutrition: file(
-        relativePath: { eq: "images/neil-rogers-nutrition-1.jpg" }
+        relativePath: { eq: "images/neil-rogers-nutrition-restored.png" }
       ) {
         childImageSharp {
           gatsbyImageData(layout: FULL_WIDTH)
         }
       }
-      wnws: file(relativePath: { eq: "images/neil-wnws-1981.jpg" }) {
+      wnws: file(relativePath: { eq: "images/wnws-restored.png" }) {
         childImageSharp {
           gatsbyImageData(layout: FULL_WIDTH)
         }
       }
-      neil_1985: file(relativePath: { eq: "images/neil-1985.jpg" }) {
+      neil_1985: file(
+        relativePath: { eq: "images/neil-1985-winz-restored.png" }
+      ) {
         childImageSharp {
           gatsbyImageData(layout: FULL_WIDTH)
         }
       }
-      night: file(relativePath: { eq: "images/Neil_at_Night.jpg" }) {
+      night: file(relativePath: { eq: "images/neil-wami-restored.png" }) {
         childImageSharp {
           gatsbyImageData(layout: FULL_WIDTH)
         }
@@ -57,7 +59,7 @@ const Timeline = () => {
           gatsbyImageData(layout: FULL_WIDTH)
         }
       }
-      wiod: file(relativePath: { eq: "images/neil-rogers-wiod.jpg" }) {
+      wiod: file(relativePath: { eq: "images/neil-wiod-restored.png" }) {
         childImageSharp {
           gatsbyImageData(layout: FULL_WIDTH)
         }
@@ -67,14 +69,12 @@ const Timeline = () => {
           gatsbyImageData(layout: FULL_WIDTH)
         }
       }
-      wsun: file(
-        relativePath: { eq: "images/neil-rogers-wsun-douchebag2.jpg" }
-      ) {
+      wsun: file(relativePath: { eq: "images/douche-bag-restored.png" }) {
         childImageSharp {
           gatsbyImageData(layout: FULL_WIDTH)
         }
       }
-      zeta: file(relativePath: { eq: "images/zeta-94-9.jpg" }) {
+      zeta: file(relativePath: { eq: "images/zeta4.jpg" }) {
         childImageSharp {
           gatsbyImageData(layout: FULL_WIDTH)
         }

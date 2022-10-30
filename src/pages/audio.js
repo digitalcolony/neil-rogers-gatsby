@@ -8,7 +8,7 @@ import PrimaryLayout from "../layouts/PrimaryLayout"
 const Audio = () => {
   const images = useStaticQuery(graphql`
     query {
-      pope: file(relativePath: { eq: "images/pope.jpg" }) {
+      pope: file(relativePath: { eq: "images/neil-pope-restored.png" }) {
         childImageSharp {
           gatsbyImageData(layout: FULL_WIDTH)
         }
