@@ -37,7 +37,7 @@ const Docs = () => {
         <a
           href="https://docs.google.com/spreadsheets/d/1czK9DiOqCK_P8lYS5Im8a_u9IZnKW39lBAuq3FXdmRM/edit?usp=sharing"
           target="_blank"
-          rel="noopener noreferrer"
+          rel="noreferrer"
         >
           Google Spreadsheet
         </a>{" "}
@@ -136,7 +136,7 @@ const Docs = () => {
         of the shows before 1999 are partial. Some are good quality and some
         aren’t. We can date the show and add to the archive.
       </p>
-      <figure>
+      <figure className="wider">
         <GatsbyImage
           image={images.convert.childImageSharp.gatsbyImageData}
           alt={"converting cassette to MP3"}
