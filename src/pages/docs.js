@@ -6,15 +6,15 @@ import Meta from "../components/Meta"
 import PrimaryLayout from "../layouts/PrimaryLayout"
 
 const Docs = () => {
-  const images = useStaticQuery(graphql`
-    query {
-      convert: file(relativePath: { eq: "images/convert-tapes.jpg" }) {
-        childImageSharp {
-          gatsbyImageData(layout: FULL_WIDTH)
-        }
-      }
-    }
-  `)
+  // const images = useStaticQuery(graphql`
+  //   query {
+  //     convert: file(relativePath: { eq: "images/convert-tapes.jpg" }) {
+  //       childImageSharp {
+  //         gatsbyImageData(layout: FULL_WIDTH)
+  //       }
+  //     }
+  //   }
+  // `)
   return (
     <PrimaryLayout title="📄Docs">
       <Meta />
@@ -136,13 +136,13 @@ const Docs = () => {
         of the shows before 1999 are partial. Some are good quality and some
         aren’t. We can date the show and add to the archive.
       </p>
-      <figure className="wider">
+      {/* <figure className="wider">
         <GatsbyImage
           image={images.convert.childImageSharp.gatsbyImageData}
           alt={"converting cassette to MP3"}
         />
         <figcaption>Converting a cassette to an MP3</figcaption>
-      </figure>
+      </figure> */}
 
       <p>
         Email <b>audio@neilrogers.org</b>. Thank you!
