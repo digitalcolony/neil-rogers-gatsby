@@ -50,3 +50,11 @@ ul.schedule {
   list-style-type: none;
   word-break: break-all;
 }
+@media screen and (max-width: 500px) {
+  .yahoo {
+    font-family: monospace, monospace;
+    font-size: 0.8em;
+    list-style-type: none;
+    word-break: break-word;
+  }
+}
