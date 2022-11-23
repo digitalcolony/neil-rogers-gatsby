@@ -136,7 +136,7 @@ const Docs = () => {
         of the shows before 1999 are partial. Some are good quality and some
         aren’t. We can date the show and add to the archive.
       </p>
-      <figure className="wider">
+      <figure>
         <GatsbyImage
           image={images.convert.childImageSharp.gatsbyImageData}
           alt={"converting cassette to MP3"}
