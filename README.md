@@ -1,8 +1,7 @@
 # The Neil Rogers Show
 
-This is the Gatsby rebuild of the [Neil Rogers](https://neilrogers.org) website. I modified the Simple Soundboard for React.
+This was the Gatsby rebuild of the Neil Rogers website. Everything broke in January 2023 when I tried upgrading to 5.0. Instead of fighting with Gatsby for another weekend, I switched to Astro. Much better. You can find that repo here: [https://github.com/digitalcolony/neil-rogers-org](https://github.com/digitalcolony/neil-rogers-org)
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/21e91175-f04a-4458-8c3b-2a11caaaed05/deploy-status)](https://app.netlify.com/sites/neil-rogers/deploys)
 
 ## Sitemap
 
